@@ -1,0 +1,11 @@
+valor=float(input("Insira o valor do seu carro: "))
+fabrica=(valor/1.116)
+impostos=(fabrica*0.45)
+fabrica2=(fabrica-impostos)
+distribuidor=(valor-fabrica)
+soma=(impostos+fabrica2+distribuidor)
+print("O valor de fabricação é: ", fabrica2)
+print("O valor dos imposto é ", impostos)
+print("O valor do distribuidor é ", distribuidor)
+print("A soma é: ", soma)
+		

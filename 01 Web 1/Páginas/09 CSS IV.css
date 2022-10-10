@@ -1,0 +1,36 @@
+a:link{
+    background-color: green;
+
+}/*clique mouse*/
+a:visited{
+    background-color: brown;
+}/*visitado*/
+a:active{
+    color:aqua
+}/*clique mouse*/
+a:hover{
+    color:red
+}/*passa o mouse por cima*/
+.e {
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px; /*espaçamento interno*/
+}
+.e2 {
+    background-color: aqua;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px; /*espaçameto externo*/
+    border-width: 10px;
+    border-color: crimson;
+    border-style: dashed;
+}
+.e3{
+   width: 200px;
+   height: 200px;
+   background-image: url("https://cdn3.vectorstock.com/i/thumb-large/04/22/modern-abstract-texture-background-tile-vector-22650422.jpg");
+   display: block; /*para aumentar o tamanho da span*/
+   text-align: center;
+}

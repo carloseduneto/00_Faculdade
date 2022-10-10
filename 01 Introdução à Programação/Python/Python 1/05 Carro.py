@@ -1,0 +1,10 @@
+distancia=float(input("Qual a distância a ser percorrida? km "))
+alcool=float(input("Qual o valor do álcool? R$"))
+gasolina=float(input("Qual o valor da gasolina? R$"))
+km_alcool=(distancia/9)
+precoalcool=(km_alcool*alcool)	
+km_gasolina=(distancia/11)
+precogasolina=(km_gasolina*gasolina)
+
+print("Custará R$", precogasolina, "viajando com gasolina")
+print("Custará R$", precoalcool, "viajando com álcool")

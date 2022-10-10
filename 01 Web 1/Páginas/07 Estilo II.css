@@ -1,0 +1,25 @@
+h1 { 
+    color: #990000; 
+    background-color: #FC9804; 
+    }
+.saudade{
+    color: cyan;
+    background-color: pink;
+    }
+.amanda{
+    color: pink;
+    background-color: black;
+    }
+.jojo{
+    color: pink;
+    background-color: yellow;
+    }
+
+p { 
+    color: #001f99; 
+    background-color: #fcdcdc; 
+    border-color: gainsboro;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    }
