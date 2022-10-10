@@ -1,0 +1,6 @@
+frase=input("Olá usuário, insira uma frase :) ")
+palavraAntiga=input("Insira o termo que você deseja alterar: ")
+print(f'Agora, você quer alterar "{palavraAntiga}" por?')
+palavraNova=input(">>")
+substitui=frase.replace(palavraAntiga, palavraNova)
+print(substitui)

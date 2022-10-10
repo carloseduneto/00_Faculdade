@@ -1,0 +1,26 @@
+[
+    {
+        "CPF": "15478966658",
+        "Telefone": "35987654321",
+        "Email": "casinha@email.com",
+        "Nome": "Jessica",
+        "Endereco": "Rua da Cidade, 5",
+        "DataDeNascimento": "3/10/89"
+    },
+    {
+        "CPF": "*14478574123",
+        "Telefone": "35999654321",
+        "Email": "patinho@email.com",
+        "Nome": "Lena",
+        "Endereco": "Rua da Sa\u00edda, 11",
+        "DataDeNascimento": "02/04/95"
+    },
+    {
+        "CPF": "25814796302",
+        "Telefone": "15935748665",
+        "Email": "batata@email.com",
+        "Nome": "Luana",
+        "Endereco": "Rua da Entrada, 100",
+        "DataDeNascimento": "01/07/00"
+    }
+]

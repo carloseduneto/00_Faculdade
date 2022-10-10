@@ -1,0 +1,5 @@
+frase=input("Qual frase você quer saber a quantidade de palavras? ")
+removeEspaco=frase.strip()
+quebraFrase=removeEspaco.split(" ")
+tamanhoFrase=len(quebraFrase)
+print(f'A frase:\033[1m"{frase}"\033[0m tem {tamanhoFrase} palavras!!!')
