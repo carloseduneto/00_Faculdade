@@ -149,7 +149,7 @@ console.log ("1" === 1 )
 console.log (1 == 1)
 console.log ("1" ==1) //compara apenas valores, apenas converte
 
-//Operadores lógicos
+//Operadores lógicos ternal
 //Tem um cliente, 100 premium, comum
 let pontos = 100;
 let tipo = pontos > 100 ? "premium" : "comum"; //primeiro é vdd e o segundo falso
@@ -176,3 +176,22 @@ console.log(podeAplicarAVagaOu)
 let candidatoRecusado = !podeAplicarAVagaOu;
 
 console.log(candidatoRecusado)
+
+//Comparação com operadores não boleanos
+//Falsy
+//undefined
+//null
+// 0
+// false
+// ' '
+// NaN - not a number
+
+//Truthy -> não é nada que está acima
+
+let corPersonalizada = "cinza";
+let corPadrao = "azul";
+ let corPerfil = corPersonalizada || corPadrao;
+
+ console.log (corPerfil);
+
+ 
