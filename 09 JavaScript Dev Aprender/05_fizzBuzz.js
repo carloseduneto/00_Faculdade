@@ -3,7 +3,7 @@
 //Divi´sivel por 3 e 5 => FizzBuzz
 //Não é divisível por 3 ou 5 => entrada
 //Não é um número => "Não é um número"
-const resultado = fizzBuzz (15);
+const resultado = fizzBuzz (1010010);
 console.log(resultado)
 
 function fizzBuzz (entrada){
