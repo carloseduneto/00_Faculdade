@@ -1,15 +1,21 @@
-Matriz=[]
-MatrizdaMatriz=[]
-Colunas=10
+matriz=[]
+colunas=3
 Linhas=2
 
-for Coluna in range(Colunas):
-    Matriz.append([])
-    print(Matriz)
-    for Linha in range(Linhas):
-        Nome=input("Nome: ")
-        Idade=input("Idade: ")
+for coluna in range(colunas):
+    matriz.append([])
+    nome=input("Nome: ")
+    idade=input("Idade: ")
+    matriz[coluna].append(nome)
+    matriz[coluna].append(idade)
 
-        Matriz[Coluna].append(Nome)
-        Matriz[Coluna].append(Idade)
-        print(Matriz)
+opcao="SIM"
+while (opcao not in "2NÃO" ):
+    print("Desja exibir os dados cadastrados?")
+    print("1 - Sim / 2 - Não")
+    print(opcao)
+    opcao=input(">>").upper()
+
+    if (opcao.upper() in ("1SIM")):
+        for indice in range(colunas):
+            print(matriz[indice])
