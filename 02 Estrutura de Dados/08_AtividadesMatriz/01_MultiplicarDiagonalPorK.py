@@ -25,7 +25,7 @@ print("+"*10)
 print(f"Multiplicando as diagonais por {k}:")
 for i in range (len(matriz)):
     for c in range(len(matriz)):
-        if (i==c or i+c==2):
+        if (i==c):
             matriz[i][c]=matriz[i][c]*k
 
 for i in range(len(matriz)):
