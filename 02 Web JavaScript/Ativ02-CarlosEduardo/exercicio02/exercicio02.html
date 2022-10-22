@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        </style>
+
+    <title>Exercício 1</title>
+</head>
+<body align="center">
+    <h1>Execício 2</h1>
+    <table align="center">
+        <tr>
+            <td>💵Dinheiro na carteira:<b>R$</b></td><td><b>5000</b></td>
+        </tr>
+
+        <tr>
+            <td align="right">📈Valor dólar atual: <b>$</b></td>
+            <td ><b>5.22</b></td>
+        </tr>
+    </table>
+</body>
+<script>
+    let carteira=document.getElementsByTagName("td")[1].innerText
+
+    let dolar=document.getElementsByTagName("td")[3].innerText
+    let divisao = carteira/dolar;
+    if (divisao<=1.99){
+    document.write(`🤑Você pode comprar  <b>$${divisao.toFixed(2)}<b> dólar`);
+    }else{
+    document.write(`🤑Você pode comprar<b> $${divisao.toFixed(2)}</b> dólares`);
+    }
+    
+</script>
+</html>

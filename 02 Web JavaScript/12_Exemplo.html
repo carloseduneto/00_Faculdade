@@ -1,0 +1,67 @@
+<!-- 
+Leidiane Rodrigues     006532  
+Bruno Aguiar        006520
+Carlos Neto     006564
+
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos DOM - Título da página</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        </style>
+</head>
+<body align="center">
+    <h1 name="inicio">Novo título</h1>
+    <h2 class="fundovermelho">Iniciando estudos com DOM</h2>
+    <p >Aqui vai o resultado</p>
+    <p>Aprendendo a usar o DOM com JavaScript</p>
+    <div id="msg">Clique aqui</div>
+    <div name="outra">Outra DIV</div>
+    <p id="ultimop">Ultimo parágrafo</p>
+    <div class="ultimadiv">Ultima DIV</div>
+    <br><br><br>
+    <script>
+        let inicio = document.getElementsByName("inicio")[0];
+        inicio.style.background="yellow";
+        
+        
+        let fundovermelho = document.getElementsByClassName("fundovermelho")[0];
+        fundovermelho.style.background="red";
+
+        let paragrafoVermelho = document.getElementsByTagName("p")[0];
+        paragrafoVermelho.style.color="red";
+
+        let paragrafoAzul = document.getElementsByTagName("p")[1];
+        paragrafoAzul.style.color="blue"
+
+        let caixaDeTextoVerde = document.getElementById("msg");
+        caixaDeTextoVerde.style.color="white"
+        caixaDeTextoVerde.style.background="green"
+        caixaDeTextoVerde.style.border='2px solid black'
+        caixaDeTextoVerde.style.width="500px"
+        borderColor="black"
+        caixaDeTextoVerde.style.height="100px"        
+
+        let caixaDeTextoCinza = document.getElementsByName("outra")[0];
+        caixaDeTextoCinza.style.background="grey"
+
+        let ultimoParagrafo = document.getElementById("ultimop");
+        ultimoParagrafo.style.fontSize="25px"
+
+        let ultimaDiv = document.getElementsByClassName("ultimadiv")[0];
+        ultimaDiv.style.color="black"
+        ultimaDiv.style.background="skyblue"
+        ultimaDiv.style.border='2px solid red'
+        ultimaDiv.style.width="500px"
+        borderColor="black"
+        ultimaDiv.style.height="100px"
+
+
+    </script>
+</body>
+</html>
