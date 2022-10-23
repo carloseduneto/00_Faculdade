@@ -23,6 +23,8 @@ for i in range(1):
         print(nomesETemposDeCadaCorredor)
 print(nomesETemposDeCadaCorredor)
 
+print("NovaLinha")
+
 # Adiciona as voltas na matriz
 # for i in range(voltas):
 #     for i in range(corredores):
