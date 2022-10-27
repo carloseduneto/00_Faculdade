@@ -56,17 +56,17 @@ listaVoltas=[0]*corredores
 for i in range(1, voltas, +1):
     for j in range(corredores):
         if j==0:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
         if j==1:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
         if j==2:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
         if j==3:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
         if j==4:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
         if j==5:
-            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]
+            listaVoltas[j]= listaVoltas[j]+nomesETempos[i][j]  # type: ignore
 
             
 
