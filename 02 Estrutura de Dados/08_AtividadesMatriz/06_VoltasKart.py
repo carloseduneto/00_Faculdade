@@ -19,7 +19,6 @@ corredores = 6
 #  Adiciona os corredores na matriz
 # for i in range(1):
 #     nomesETempos.append([])
-
 #     for j in range(corredores):
 #         nomeDoCorredor=input(f"Insira o nome do {j+1}º corredor: ")
 #         nomesETempos[i].append(nomeDoCorredor)
@@ -31,7 +30,6 @@ voltas+=1
 for i in range(1,voltas,+1):
     nomesETempos.append([])
     for j in range(0,corredores, +1):
-        # print(f"volta:{i+1}, corredor: {j+1}")
         voltaCorredor = int(randint(1, 1000))
         nomesETempos[i].append(voltaCorredor)  # type: ignore
 
@@ -42,8 +40,7 @@ indiceVolta=0
 print("*"*15)
 for i in range(1, voltas, +1):
     for j in range(corredores):
-        # print(f"\033[1m{i}, {j}\033[0m")
-        # print(nomesETempos[i][j],"\n")
+
         if nomesETempos[i][j]<voltaMaisCurta:
             voltaMaisCurta=nomesETempos[i][j]
             indiceNome=j
