@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+    <title>🚗Aluguel</title>
+</head>
+<body align="center">
+    <div class="centro">
+        <div>
+            <form action="#" id="exercicio">    
+                <h1>🚗Aluguel de Carros</h1>
+                <label for="km">Quilometros rodados: </label>
+                <input type="number" name="km" id="km" style="width: 40px;" placeholder="km">
+                <br><br>
+
+                <label for="dias">Dias percorridos: </label>
+                <input type="number" name="dias" id="dias" placeholder="dias" style="width: 40px;">
+                <br><br>
+
+                <input type="button" value="Calcular" class="botao clique" onclick="totalASerPago()">
+                <input type="button" value="Limpar" class="botao clique" onclick="limpar()" >
+                <br><br>
+
+                <div class="resultados">
+                    <p align="left" id="resultados"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="aluguel.js"></script>
+</html>

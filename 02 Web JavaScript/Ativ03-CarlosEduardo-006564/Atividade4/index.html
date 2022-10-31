@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>⛽Combustível</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+</head>
+<body align="center">
+    <div class="centro">
+        <div>
+            <form action="#" id="exer">
+                <h1>⛽Combustível X Litros</h1>
+                <label for="litros">Litros</label><input type="number" name="litros" id="litros" style="width: 40px; " placeholder="L" >
+                <br><br>
+                
+                <label for="quilometros">Quilometros</label><input type="number" name="quilometros" id="quilometros" style="width: 40px;" placeholder="km">
+                <br><br>
+
+                <input type="button" value="Calcular" onclick="combustivel()" class="botao clique">
+                <input type="button" value="Limpar" onclick="limpar()" class="botao clique">
+                <br><br>
+
+                <div class="resultados">
+                    <p id="valor"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="combustivel.js"></script>
+</html>

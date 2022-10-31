@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fede00;
+    color: #7d6e00;
+}
+.principal{
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    border: 2px solid #7d6e00;
+    background-color: #fede00;
+    color: #fede00;
+    cursor: pointer;
+}
+
+.clique{
+    border-color: #7d6e00;
+    color: #7d6e00;
+}
+
+.clique:hover{
+    background-color: #7d6e00;
+    color: #fede00;
+}
+

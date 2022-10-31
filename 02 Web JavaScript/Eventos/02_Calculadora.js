@@ -7,5 +7,5 @@ function somar() {
     let n2= Number(txtn2.value)
 
     let soma= n1+n2;
-    resp.innerHTML= `Soma entre ${n1} e ${n2} é igual a ${soma}`;
+    resp.innerHTML= `Soma entre ${n1} e ${n2} é igual a ${soma}<br> a`;
 }

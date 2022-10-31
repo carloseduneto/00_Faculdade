@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+    <title>🎨Área de Tinta</title>
+</head>
+<body align="center">
+    <div class="centro">
+        <div>
+            <form action="#" id="exercicio">
+                <h1>🎨 Área de Tinta</h1>
+
+                <label for="altura">Altura da parede:</label>
+                <input type="number" name="altura" id="altura" style="width:40px ;" placeholder="m">
+                <br><br>
+
+                <label for="largura">Largura da parede:</label>
+                <input type="number" name="largura" id="largura" style="width: 40px;" placeholder="m">
+                <br><br>
+
+                <input type="button" value="Calcular" class="botao clique" onclick="tinta()">
+                <input type="button" value="Limpar" class="botao clique" onclick="limpar()">
+
+                <div class="resultados">
+                    <p align="left" id="tintaTotal"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="tinta.js"></script>
+</html>

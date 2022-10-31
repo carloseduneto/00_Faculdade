@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fede00;
+    color: #7d6e00;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    border: 2px solid #7d6e00;
+    background-color: #fede00;
+    color: #7d6e00;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #7d6e00;
+    color: #fede00;
+}
+

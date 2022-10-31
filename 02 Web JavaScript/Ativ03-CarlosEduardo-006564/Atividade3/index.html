@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>💵 Controle de Consórsio</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+</head>
+<body align="center">
+    <div class="centro">
+        <div>
+    <form action="#" id="exercicio">
+    <h1>💵 Controle de Consórsio</h1>
+    <label for="totalPrestacoes">Total de prestações </label><input type="number" name="totalPrestacoes" id="total" style="width: 40px;" placeholder="Nº">
+    <br><br>
+
+    <label for="pagas">Prestações Pagas </label><input type="number" name="pagas" id="pagas" placeholder="Nº" style="width: 40px;">
+    <br><br>
+
+    <label for="valor">Valor de cada prestação </label><input type="number" name="valor" id="valor" placeholder="R$" style="width: 70px;">
+    <br><br>
+    
+    <input type="button" value="Calcular" onclick="valorPago()" class="botao clique">
+    <input type="button" value="Limpar" onclick="limpar()" class="botao clique">
+
+
+        <p id="valorFinal" align="left" class="resultados"></p>
+        </div>
+    </div>
+</form>
+</body>
+<script src="consorcio.js"></script>
+</html>
