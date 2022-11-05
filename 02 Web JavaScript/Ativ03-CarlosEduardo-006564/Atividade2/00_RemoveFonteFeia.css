@@ -13,6 +13,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 500ms;
+}
+
+#movimenta{
+    animation: 500ms;
 }
 
 .botao{

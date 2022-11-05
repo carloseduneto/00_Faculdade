@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png">
+    <title>⛽Gasolina</title>
+</head>
+<body align="center">
+    <div class="principal">
+        <div class="secundaria">
+                <form action="#" id="exercicio">
+                <h1>01 Gasolina</h1>
+                <br>
+                <label for="gasolina">Gasolina:</label>
+                <input type="number" name="gasolina" id="gasolina" style="width: 40px;" class="inserir">
+                <br>
+                <label for="etanol">Etanol:</label>
+                <input type="number" name="etanol" id="etanol" style="width: 40px;" class="inserir">
+                <br><br>
+                <input type="button" value="Calcular" onclick="resultadoC()" class="botao">
+                <input type="button" value="Limpar" class="botao" onclick="Limpar()">
+                <br><br>
+                <div class="resultado"><p id="resultadoGasolina" ></p></div>
+                
+                </form>
+        </div>
+    </div>
+</body>
+<script src="gasolina.js"></script>
+</html>

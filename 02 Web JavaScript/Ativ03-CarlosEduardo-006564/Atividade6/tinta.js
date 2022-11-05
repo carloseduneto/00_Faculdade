@@ -28,4 +28,5 @@ function tinta() {
 function limpar() {
     document.getElementById("exercicio").reset()
     tintaTotal.innerHTML="";
+    
 }
