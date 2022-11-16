@@ -1,6 +1,3 @@
-from tkinter import E
-
-
 def lerMatriz(matriz):
     for i in range (len(matriz)):
         for j in range(len(matriz)):
@@ -22,3 +19,12 @@ def calculaMedia(valor:list):
     media=media**2
     print( media2)
     print( media)
+
+def calculaTempo(velocidade, distancia):
+    tempo=distancia/velocidade
+    return tempo
+
+def calculaDistancia(velocidade, tempo):
+    distancia = velocidade * tempo
+    return distancia
+
