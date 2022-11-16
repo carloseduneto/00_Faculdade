@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas da casa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="logoTitulo.svg">
+</head>
+<body align="center" class="fundoContas">
+   <header>
+    <a href="index.html">
+    <div align="center"><img src="logo.svg" alt="Início" height="60px" class="inicio"></div></a>
+    <table>
+        <tr>
+            <td><nav align="center" class="navegacao">
+                <div align="center">
+                    <ul class="nav contas">
+        
+               <li > <a href="01_ContasCasa.html" class="ligadoConta">Contas da Casa</a> </li>
+                <li><a href="02_IMC.html">IMC</a> </li>
+               <li> <a href="03_Eleicoes.html">Eleições</a></li>
+               <li> <a href="04_Produtos.html">Produtos</a> </li>
+               <li> <a href="05_Piscina.html">Piscina</a></li>
+            </ul>
+        </div>
+            </nav></td>
+        </tr>
+    </table>
+
+    <div>
+    </div>
+    <div>
+    
+    </div>
+    </header>
+    <div class="principal">
+    <div class="CaixaConta">
+    <form action="#" id="exercicio">
+    <h1>Conta</h1>
+        <label for="internet">Internet:</label>
+        <input type="number" id="internet" placeholder=" Valor">
+        <br><br>
+
+        <label for="energia">Energia:</label>
+        <input type="number" id="energia" placeholder=" Valor">
+        <br><br>
+
+        <label for="agua">Mercado:</label>
+        <input type="number" id="agua" placeholder=" Valor">
+        <br><br>
+
+        <label for="pessoas">Pessoas:</label>
+        <input type="number" id="pessoa" placeholder=" Quantidade">
+        <br><br>
+        <input type="button" value="Calcular" onclick="conta()" class="botaoContas">
+        <input type="button" value="Limpar" onclick="limparConta()" class="botaoContas">
+
+        
+        <br><br>
+        <div>
+            <p id="resultadosContas"></p>
+        </div>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <h3 style="color: white;"><b>Desenvolvedores:</b></h3>
+        <div class="rodapeCentralizar">
+                <table class="rodapeContas">
+
+                        <td width="500px"><div><img src="leide.png" alt="" class="leide"><br>Leidiane Rodrigues<br>leidianersmg@gmail.com </div></td>
+                        <td width="500px"><div><img src="jorge.png" alt="" class="jorge"><br>Jorge Caetano<br>jorgecaetano.dev@outlook.com</div></td>
+                        <td width="500px"><div><img src="carlos.png" alt="" class="carlos"> <br>Carlos Neto <br>carloseduneto.dev@gmail.com </div></td>
+                    </tr>
+                </table>    
+        </div>
+    <h3 style="color: white;">2022</h3>    
+    </footer>
+
+</body>
+<script src="funcoes.js"></script>
+</html>

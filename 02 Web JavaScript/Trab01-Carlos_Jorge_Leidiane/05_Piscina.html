@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume piscina</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="logoTitulo.svg">
+</head>
+<body align="center" class="fundoPiscina">
+    <header>
+        <a href="index.html">
+        <div align="center"><img src="logo.svg" alt="Início" height="60px" class="inicio"></div>
+        </a>
+        <table>
+            <tr>
+                
+                <td><nav align="center" class="navegacao">
+                    <div align="center">
+                        <ul class="nav piscina">
+            
+                   <li> <a href="01_ContasCasa.html" >Contas da Casa</a> </li>
+                    <li><a href="02_IMC.html">IMC</a> </li>
+                   <li> <a href="03_Eleicoes.html">Eleições</a></li>
+                   <li> <a href="04_Produtos.html">Produtos</a> </li>
+                   <li> <a href="05_Piscina.html" class="ligadoPiscina">Piscina</a></li>
+                </ul>
+            </div>
+                </nav></td>
+            </tr>
+        </table>
+            
+          </nav>
+       </header>
+    <div class="principal">
+    <div class="CaixaPiscina">
+    <form action="#" id="exercicio">
+    <h1>Piscina</h1>
+        <label for="comprimento">Comprimento</label>
+        <input type="number" id="comprimento" placeholder=" m">
+        <br><br>
+
+        <label for="profundidade">Profundidade</label>
+        <input type="number" id="profundidade" placeholder=" m">
+        <br><br>
+
+        <label for="largura">ㅤㅤㅤLargura</label>
+        <input type="number" id="largura" placeholder=" m">
+        <br><br>
+
+        <input type="button" value="Calcular" onclick="calculaVolume()" class="botaoPiscina">
+        <input type="button" value="Limpar" onclick="limparPiscina()" class="botaoPiscina">
+
+        <br><br>
+        <div>
+            <p id="resultadosVolume"></p>
+        </div>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <h3 style="color: white;"><b>Desenvolvedores:</b></h3>
+        <div class="rodapeCentralizar">
+                <table class="rodapePiscina">
+
+                        <td width="500px"><div><img src="leide.png" alt="" class="leide"><br>Leidiane Rodrigues<br>leidianersmg@gmail.com </div></td>
+                        <td width="500px"><div><img src="jorge.png" alt="" class="jorge"><br>Jorge Caetano<br>jorgecaetano.dev@outlook.com</div></td>
+                        <td width="500px"><div><img src="carlos.png" alt="" class="carlos"> <br>Carlos Neto<br>carloseduneto.dev@gmail.com </div></td>
+                    </tr>
+                </table>    
+        </div>
+    <h3 style="color: white;">2022</h3>
+    </footer>
+</body>
+<script src="funcoes.js"></script>
+</html>

@@ -1,0 +1,483 @@
+/* * {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+.fundoContas{
+    background-image: url(https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+}
+.fundoImc{
+    background-image: url(https://images.unsplash.com/photo-1627820751275-e44b937c5d33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+}
+.fundoEleicoes{
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2022/08/12193807/urna-eletronica-5.jpg);
+    background-size: cover;
+}
+
+
+.fundoProdutos{
+    background-image: url(https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+}
+.fundoPiscina{
+    background-image: url(https://images.pexels.com/photos/8332960/pexels-photo-8332960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+}
+
+.principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+.rodapeCentralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodapeContas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: white;
+    background: rgba(54, 35, 11, 0.5);
+    border-radius: 20px;
+}
+
+.rodapeImc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: white;
+    background: rgba(116, 79, 85, 0.5);
+    border-radius: 20px;
+}
+
+.rodapeEleicoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: white;
+    background: rgba(27, 11, 52, 0.8);
+    border-radius: 20px;
+}
+
+.rodapeProdutos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: white;
+    background: rgba(154, 10, 3, 0.5);
+    border-radius: 20px;
+}
+
+.rodapePiscina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: white;
+    background: rgba(12, 58, 63, 0.5);
+    border-radius: 20px;
+}
+
+.rodapeIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.CaixaConta{
+width: 400px;
+height: 401px;
+color: white;
+background: rgba(54, 35, 11, 0.5);
+border-radius: 20px;
+}
+
+.CaixaContaDev{
+    width: 800px;
+    height: 200px;
+    color: white;
+    background: rgba(54, 35, 11, 0.5);
+    border-radius: 20px;
+    }
+
+.CaixaImc{
+    width: 400px;
+    height: 300px;
+    color: white;
+    background: rgba(116, 79, 85, 0.5);
+    border-radius: 20px;
+    }
+.CaixaEleicoes{
+    width: 400px;
+    height: 250px;
+    color: white;
+    background: rgba(27, 11, 52, 0.8);
+    border-radius: 20px;
+}
+.CaixaProdutos{
+    width: 400px;
+    height: 300px;
+    color: white;
+    background: rgba(154, 10, 3, 0.5);
+    border-radius: 20px;
+}
+.CaixaPiscina{
+    width: 400px;
+    height: 300px;
+    color: white;
+    background: rgba(12, 58, 63, 0.5);
+    border-radius: 20px;
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav li{
+display:inline;
+}
+
+.nav a{
+    display:inline-block;
+}
+
+.contas {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(54, 35, 11, 0.5);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 498px;
+  }
+  
+
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .contas li a:hover:not(.ligadoConta) {
+    background-color: #FF8300;
+  }
+  
+  .piscina li a:hover:not(.ligadoPiscina) {
+    background-color: #00cdb8;
+  }
+
+  .imc li a:hover:not(.ligadoImc) {
+    background-color: #dd9ba6;
+  }
+
+  .eleicoes li a:hover:not(.ligadoEleicoes) {
+    background-color: #6848b3;
+  }
+  
+  .produtos li a:hover:not(.ligadoProdutos) {
+    background-color: #d53e43;
+  }
+
+  .ligadoConta {
+    background-color: #FF8300;
+  }
+
+  .ligadoImc {
+    background-color: #dd9ba6;
+  }
+
+  .ligadoEleicoes {
+    background-color: #6848b3;
+  }
+
+  .ligadoProdutos {
+    background-color: #d53e43;
+  }
+
+  .ligadoPiscina {
+    background-color: #00cdb8;
+  }
+
+  .imc{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(116, 79, 85, 0.5);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 498px;
+  }
+  
+  .piscina{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(12, 58, 63, 0.5);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .eleicoes{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(27, 11, 52, 0.8);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+
+.produtos{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(154, 10, 3, 0.5);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+
+table{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.leide{
+    position: flex;
+    justify-items: baseline;
+    align-items: left;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.jorge{
+    position: flex;
+    justify-items: baseline;
+    align-items: center;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.carlos{
+    position: flex;
+    justify-items: baseline;
+    align-items: center;
+    width: 50px;
+    border-radius: 100%;
+}
+
+input[type=number] {
+    border: none;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #898989;
+    align-items: center;
+    justify-content:center;
+    
+    width: 90px;
+    height: 20px;
+  }
+
+select{
+    border: none;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: #898989;
+    align-items: center;
+    justify-content:center;
+    
+    width: 100px;
+    height: 20px;
+}
+
+.botaoContas{
+    border: solid #FF8300 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+
+}
+
+.botaoContas:hover{
+    background-color: #FF8300;
+}
+
+.botaoImc{
+    border: solid #dd9ba6 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+
+}
+
+.botaoImc:hover{
+    background-color: #dd9ba6;
+}
+
+.botaoEleicoes{
+    border: solid #6848b3 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+
+}
+
+.botaoEleicoes:hover{
+    background-color: #6848b3;
+}
+
+.botaoProdutos{
+    border: solid #d53e43 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+
+}
+
+.botaoProdutos:hover{
+    background-color: #d53e43;
+}
+
+.botaoPiscina{
+    border: solid #00cdb8 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+
+}
+
+.botaoPiscina:hover{
+    background-color: #00cdb8;
+}
+
+.cartao{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(27, 11, 52, 0.8) 0px 7px 29px 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cartao::before{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(transparent, black);
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out 0ms;
+    border-radius: 18px;
+    z-index: 1;
+}
+
+.cartaoImagem{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 0;
+    transition: transform 250ms ease-in-out 0ms;
+}
+
+.cartao:hover::before{
+    opacity: 0.8;
+}
+
+.cartao:hover .cartaoImagem{
+    transform: scale(1.1);
+}
+
+h5{
+    font-size:19px;
+    margin: 8px 0;
+}
+
+p, h5{
+    color: white;
+    /* font-weight:bold; */
+    z-index: 2;
+}
+
+p{
+    font-size: 13px;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.tabelaIndex{
+    border-spacing: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor do produto</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="logoTitulo.svg">
+</head>
+<body align="center" class="fundoProdutos">
+    <header>
+        <a href="index.html">
+        <div align="center"><img src="logo.svg" alt="Início" height="60px" class="inicio"></div></a>
+        <table>
+            <tr>
+                <td><nav align="center" class="navegacao">
+                    <div align="center">
+                        <ul class="nav produtos">
+            
+                   <li> <a href="01_ContasCasa.html">Contas da Casa</a> </li>
+                    <li><a href="02_IMC.html">IMC</a> </li>
+                   <li> <a href="03_Eleicoes.html">Eleições</a></li>
+                   <li> <a href="04_Produtos.html" class="ligadoProdutos">Produtos</a> </li>
+                   <li> <a href="05_Piscina.html">Piscina</a></li>
+                </ul>
+            </div>
+                </nav></td>
+            </tr>
+        </table>
+    </header>
+    <div class="principal">
+    <div class="CaixaProdutos">
+    <form action="#" id="exercicio">
+    <h1>Produtos</h1>
+        <label for="valorProduto">Valor do produto</label>
+        <input type="number" id="valorProduto"  placeholder=" Preço">
+        <br><br>
+
+        <label for="cars"> ㅤㅤPagamento:</label>
+        <select name="pagamento" id="pagamento">
+        <option value="aVista" id="aVista">À Vista (-10%)</option>
+        <option value="debito">Débito (-5%)</option>
+        <option value="duasVezes">2 X </option>
+        <option value="tresVezes">3 X  ou Mais vezes(+20%)</option>
+        </select>
+
+        
+        <br><br>
+        <input type="button" value="Calcular" onclick="calculaPagamento()" class="botaoProdutos">
+        <input type="button" value="Limpar" onclick="limparProdutos()" class="botaoProdutos">
+
+        <br><br>
+        <div>
+            <p id="resultadoPagamento"></p>
+        </div>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <h3 style="text-shadow: 0 0 3px #641002, 0 0 5px #641002;
+            color: white;"><b>Desenvolvedores:</b></h3>
+        <div class="rodapeCentralizar">
+                <table class="rodapeProdutos">
+
+                        <td width="500px"><div><img src="leide.png" alt="" class="leide"><br>Leidiane Rodrigues<br>leidianersmg@gmail.com </div></td>
+                        <td width="500px"><div><img src="jorge.png" alt="" class="jorge"><br>Jorge Caetano<br>jorgecaetano.dev@outlook.com</div></td>
+                        <td width="500px"><div><img src="carlos.png" alt="" class="carlos"> <br>Carlos Neto <br>carloseduneto.dev@gmail.com </div></td>
+                    </tr>
+                </table>    
+        </div>
+    <h3 style="text-shadow: 0 0 3px #641002, 0 0 5px #641002;
+    color: white;">2022</h3>
+    </footer>
+</body>
+<script src="funcoes.js"></script>
+</html>
