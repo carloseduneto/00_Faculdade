@@ -1,22 +1,25 @@
-# Combinção de números
-# O professor deseja dividir uma turma com N alunos
-#em dois grupos: um com M alunos e outro com (N-M)
-#alunos. Faça o programa que lê o valor de N e M e
-#informa o número de combinações possíveis
-#– Número de combinações é igual a N!/(M! * (N-M)!)
-#– Use funções para evitar repetição de código
-def grupos(M, N):
-    N=int(input("Valor total da turma: "))
-    M=int(input("Valor de um grupo: "))
-    outroGrupo=N-M
-    variavel=1
-    for i in range(1, N):
-        variavel=variavel*N
-    print(variavel)
+def fatorial(numero):   
+    resultado=1
+    for i in range(1,numero+1):
+        resultado *= i
+    return resultado
 
-    variavel2=1
-    for j in range(1, M):
-        variavel2=variavel2*M
-    print(variavel2)
+def combinacao(b, c, d):
+    return b / (c * d)
 
-grupos(1,4)
+n = int(input('Informe a quantidade de alunos da turma: '))
+m = int(input('Informe a quantidade de alunos do grupo 1: '))
+
+x = n - m
+
+if m >= n:
+    input('Valor inválido!')
+
+print(f'Turma: {n}, grupo 1: {m}, grupo 2: {x}')
+
+fat_n = fatorial(n)
+fat_m = fatorial(m)
+fat_x = fatorial(x)
+
+comb = combinacao(fat_n, fat_m, fat_x)
+print(f'Número de combinações possíveis: {comb}')
