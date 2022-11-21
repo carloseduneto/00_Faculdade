@@ -48,10 +48,16 @@ def indexarDezenas(numero):
 def indexarCentenas(numero):
     numero=numero/100
     numero=int(numero)
-    return numero    
+    return numero  
+
+def indexarUnidadesMilhares(numero):
+    numero=numero/1000
+    numero=int(numero)
+    return numero
+      
 
 def valorCentenas(numero):
-    subtracao=numero-valorDezenas(numero)
+    subtracao=numero-restoCentenas(numero)
     subtracao=indexarCentenas(subtracao)
     return subtracao
 
@@ -69,11 +75,31 @@ def restoCentenas(numero):
     resto=numero%100
     return resto
 
+def restoMil(numero):
+    resto=numero%1000
+    return resto
+
+def retornarMil(numero):
+    numero=numero/1000
+    numero=int(numero)
+    return numero
 
 def retornarCentenas(numero):
     numero=numero/100
     numero=int(numero)
     return numero
+
+def escreveCentenas(numero):
+    if (numero==100):
+        return "cem"
+    elif(numero%100==0):
+        numero=indexarCentenas(numero)
+        numero=numero-1
+        return centenas[numero]
+    else:
+        algarismoCentenas=valorCentenas(numero)
+        algarismoCentenas-=1
+        return algarismoCentenas    
 
 def escreveDezenas(numero):
     if numero>=10 and numero <= 19:
@@ -90,6 +116,9 @@ def escreveDezenas(numero):
 def escreveUnidades(numero):
     algarismoUnidades=restoDezenas(numero)
     return unidades[algarismoUnidades]
+
+
+
 
 
 
@@ -129,38 +158,54 @@ def opcao():
             escolha="S"
             while escolha=="S":
                 numeroPorExtenso=int(input("Digite um valor:"))
-                # print(10**(len(str(numeroPorExtenso))))    
                 if numeroPorExtenso <= 999999999:
+
+
                     if  numeroPorExtenso>=0 and numeroPorExtenso <=9:
                         print(escreveUnidades(numeroPorExtenso))
 
                     if numeroPorExtenso>=10 and numeroPorExtenso <=99:
-                        print(escreveDezenas(numeroPorExtenso))
+                        if (numeroPorExtenso<20 or numeroPorExtenso%10==0):
+                            print(escreveDezenas(numeroPorExtenso))
+                        else:
+                            print(escreveDezenas(numeroPorExtenso), " e ", escreveUnidades(numeroPorExtenso))
 
                     if numeroPorExtenso>=100 and numeroPorExtenso <=999:
+                        restoDez=numeroPorExtenso%100
                         if (numeroPorExtenso==100):
                             print("cem")
                         elif(numeroPorExtenso%100==0):
-                            numero=indexarCentenas(numeroPorExtenso)
-                            numero=numero-1
-                            print(centenas[numero])
-                            
+                            numeroPorExtenso=indexarCentenas(numeroPorExtenso)
+                            numeroPorExtenso=numeroPorExtenso-1
+                            print(centenas[numeroPorExtenso])
+                        elif(restoDez>=10 and restoDez<=19):
+                            algarismoCentenas=valorCentenas(numeroPorExtenso)
+                            algarismoCentenas-=1
+                            print(centenas[algarismoCentenas]," e ",escreveDezenas(restoCentenas(numeroPorExtenso)))
                         else:
                             if escreveDezenas(restoCentenas(numeroPorExtenso))==None:
                                 algarismoCentenas=valorCentenas(numeroPorExtenso)
+                                # algarismoCentenas=algarismoCentenas-1
                                 print(centenas[algarismoCentenas]," e ",escreveUnidades(restoDezenas(numeroPorExtenso)))
                                 
                             elif restoDezenas(numeroPorExtenso)==0:
                                 algarismoCentenas=valorCentenas(numeroPorExtenso)
+                                algarismoCentenas=algarismoCentenas-1
                                 print(centenas[algarismoCentenas], " e ", escreveDezenas(restoCentenas(numeroPorExtenso)))
 
                             else:
                                 algarismoCentenas=valorCentenas(numeroPorExtenso)
-                                print(centenas[algarismoCentenas], " e ", escreveDezenas(restoCentenas(numeroPorExtenso)), " e ",escreveUnidades(restoDezenas(numeroPorExtenso)))
-
+                                algarismoCentenas-=1
+                                print(centenas[algarismoCentenas], " e ", escreveDezenas(restoCentenas(numeroPorExtenso)), " e ",escreveUnidades(restoDezenas(numeroPorExtenso)))        
 
                     if numeroPorExtenso>=1000 and numeroPorExtenso <=9999:
-                        pass
+                        if numeroPorExtenso%1000==0:
+                            valorMil=retornarMil(numeroPorExtenso)
+                            if valorMil==1:
+                                print("mil")
+                            else:
+                                print(unidades[valorMil], " mil")
+                        
 
                     if numeroPorExtenso>=10000 and numeroPorExtenso <= 99999:
                         pass
@@ -195,24 +240,3 @@ def opcao():
 
             
 opcao()
-
-
-'''                    if numeroPorExtenso <=9:
-                        print(unidades[numeroPorExtenso])
-                    if numeroPorExtenso >=10 and numeroPorExtenso <=19:
-                        print(dez[numeroPorExtenso-10])
-                    outrasDezenas(numeroPorExtenso)
-                    cem(numeroPorExtenso)
-
-                    if numeroPorExtenso >100 and numeroPorExtenso<=999:
-                        if numeroPorExtenso%100==0:
-                            numero=retornarCentenas(numeroPorExtenso)
-                            print(centenas[numero])
-                        else:
-                            restoCentenas=numeroPorExtenso%100
-                            subtracaoCentenas=numeroPorExtenso-restoCentenas
-
-                            restoDezenas=subtracaoCentenas%10
-                            subtracaoDezenas=subtracaoCentenas-restoDezenas
-
-                            print()'''
