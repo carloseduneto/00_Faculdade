@@ -2,6 +2,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.embaixo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.estrela{
+    color: gold;
+    margin-top: 4px;
+}
+
+.tempo{
+    color: white;
+    margin-top: 4px;
+}
+
+
+
 .caixaPrincipal{
     display: flex;
     flex-direction: column;
@@ -15,6 +33,10 @@
     border-radius: 100%;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+}
 
 .inicio{
     display: flex;
@@ -43,13 +65,30 @@
 .interrogacao{
     display: flex;
     width: 1182px;
-    height: 250px;
+    height: 500px;
+    
+    border-radius: 20px;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    background: linear-gradient(316.83deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 69.27%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1591522811280-a8759970b03f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
-    margin-top: 20px;
-    background: url("interrogacao.png");
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.margem{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.k{
+
+    color: rgba(240, 248, 255, 0);
+    font-size: x-large;
 }
 
 .cursos{
@@ -207,10 +246,25 @@
 .tituloVermelho{
     width: 339px;
     height: 100px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 20px;
     margin-bottom: 20px;
     color: #a50d36;
+    border-bottom: solid 2px gray;
+    border-radius: 2px;
+    /* background-color: #00bc9a; */
+}
+
+.tituloVermelhoSaude{
+    width: 339px;
+    height: 50px;
+    margin-top: 125px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #a50d36;
+    /* background-color: #00bc9a; */
+    
+
 }
 
 .centro{
@@ -323,10 +377,10 @@ button:hover{
 }
 
 .estrelaTempo{
-    border: solid rgba(255, 255, 255, 0);
+    /* border: solid rgba(255, 255, 255, 0); */
     height: 50px;
     width: 50px;
-    transition:ease-out 200ms;
+    /* transition:ease-out 200ms; */
     display: flex;
 
 }
@@ -334,23 +388,31 @@ button:hover{
 .estrelaTempoAlinhamento{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border: solid rgba(255, 255, 255, 0);
+    justify-content: space-evenly;
     align-items: flex-end;
 }
 
 .texto{
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
     color: rgba(255, 247, 247, 0);
-    transition: ease-out 500ms;
+    /* transition: ease-out 500ms; */
 
 }
 
 .titulo{
     margin: 20px;
     color: rgb(255, 255, 255);
-    transition: ease-out 500ms;
+    /* transition: ease-out 500ms; */
 
+}
+
+.cinza{
+    height: 2px;
+    background-color: gray;
+    border-radius: 50px;
+    margin-left: 20px;
 }
 
 .titulo2{
@@ -358,7 +420,7 @@ button:hover{
     margin-left: 20px;
     margin-right: 20px;
     color: rgb(255, 255, 255);
-    transition: ease-out 500ms;
+    /* transition: ease-out 500ms; */
 
 }
 
@@ -388,6 +450,12 @@ button:hover{
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .interrogacao{
+        width: 400px;
+        height: 432px;
+
     }
 
 }

@@ -7,11 +7,11 @@ function aumentarOdontologia() {
     textoOdontologia.innerHTML="O curso de Odontologia da Libertas – Faculdades Integradas tem como objetivo a formação integral do Cirurgião-Dentista em harmonia com as características local e regional da cidade de São Sebastião do Paraíso, desenvolvendo suas capacidades para uma prática promocional de saúde, amparado em um correto diagnóstico, tratamento e prevenção das doenças bucais prevalentes."
 
     let estrelaOdontologia=document.getElementById("estrelaOdontologia");
-    estrelaOdontologia.innerHTML="<div><span class=material-symbols-rounded>star</span> 4,0</div>"
-    estrelaOdontologia.style.color="yellow";
+    estrelaOdontologia.innerHTML="<div class=embaixo><span class=material-symbols-rounded estrela>star</span> <span class=estrela>4,0</span></div>"
+    estrelaOdontologia.style.color="gold"
 
     let tempoOdontologia=document.getElementById("tempoOdontologia");
-    tempoOdontologia.innerHTML=" <div class=linha titulo2><span class=material-symbols-outlined>calendar_month</span><div class=escrito>5 anos</div></div>"
+    tempoOdontologia.innerHTML="         <div class=embaixo><span class=material-symbols-outlined tempo align=center>schedule</span><span class=tempo>5 anos</span></div>"
     tempoOdontologia.style.color="white";
 
     let voltarOdontologia=document.getElementById("voltarOdontologia");
