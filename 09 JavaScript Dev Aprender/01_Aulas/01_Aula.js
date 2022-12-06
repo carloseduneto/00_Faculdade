@@ -86,6 +86,7 @@ console.log(corSite)
 produtoSelecionado= "Camiseta"
 function mudarProduto (produto){
     produtoSelecionado = produto;
+    function a()
 };
 
 console.log(produtoSelecionado);

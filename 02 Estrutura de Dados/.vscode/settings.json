@@ -2,5 +2,6 @@
     "python.analysis.typeCheckingMode": "basic",
     "conventionalCommits.scopes": [
         "Finish the Kart exercise"
-    ]
+    ],
+    "workbench.settings.editor": "json"
 }
