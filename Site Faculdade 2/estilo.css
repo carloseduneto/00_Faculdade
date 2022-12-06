@@ -1,0 +1,393 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.caixaPrincipal{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.a{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 100%;
+}
+
+
+.inicio{
+    display: flex;
+    width: 1182px;
+    height: 350px;
+    background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(libertas.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+
+.conquistas{
+    display: flex;
+    width: 1182px;
+    height: 250px;
+    background: linear-gradient(316.83deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/8177922/pexels-photo-8177922.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+
+.interrogacao{
+    display: flex;
+    width: 1182px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: url("interrogacao.png");
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.espacinho{
+    color: rgba(240, 248, 255, 0);
+    font-size: 5px;
+}
+.exemplo{
+    width: 339px;
+    height: 100px;
+    background: aqua;
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+
+.fundoOdontologia{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoEngenhariaProducao{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoSistemas{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/5935791/pexels-photo-5935791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoPedagogia{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/4172987/pexels-photo-4172987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoPsicologia{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/7176036/pexels-photo-7176036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoEnfermagem{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/6129688/pexels-photo-6129688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoDireito{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/6077588/pexels-photo-6077588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoAdm{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/5466282/pexels-photo-5466282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+
+.fundoEngenhariaCivil{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.fundoContabeis{
+    width: 339px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/6693646/pexels-photo-6693646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition:ease-out 500ms;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.tituloVermelho{
+    width: 339px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #a50d36;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+.seta{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-top: 20px; */
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    border-top: 20px;
+
+    
+
+}
+
+button{
+    border: solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+.icones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+}
+
+.iconeOdontologia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00bc9a;
+}
+.iconeEnfermagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d10d0d;
+}
+.iconePsicologia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(188, 0, 103);
+}
+.iconeEngenhariaCivil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(226, 80, 23);
+}
+.iconeEngenhariaProducao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 13, 188);
+}
+.iconeOdontologia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00bc9a;
+}
+.iconeSistemas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0096bc;
+}
+.iconeContabilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(247, 153, 11);
+}
+.nomeCurso{
+    font-weight: 700;
+    font-size: x-large;
+    color: white;
+}
+
+.estrelaTempo{
+    border: solid rgba(255, 255, 255, 0);
+    height: 50px;
+    width: 50px;
+    transition:ease-out 200ms;
+    display: flex;
+
+}
+
+.estrelaTempoAlinhamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid rgba(255, 255, 255, 0);
+    align-items: flex-end;
+}
+
+.texto{
+    margin: 20px;
+    color: rgba(255, 247, 247, 0);
+    transition: ease-out 500ms;
+
+}
+
+.titulo{
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    transition: ease-out 500ms;
+
+}
+
+.titulo2{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    transition: ease-out 500ms;
+
+}
+
+.escrito{
+    margin-left: 20px;
+}
+
+@media(max-width: 1000px){
+    .caixaPrincipal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inicio{
+        display: flex;
+        width: 400px;
+        height: 432px;
+    }
+
+    .conquistas{
+        display: flex;
+        width: 400px;
+        height: 350px;
+        
+    }
+
+    .cursos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
