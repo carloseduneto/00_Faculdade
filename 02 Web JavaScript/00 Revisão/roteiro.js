@@ -16,6 +16,8 @@
 // === Compara o tipo (palavra, número ou objeto)
 // "7" == 7  : verdadeiro
 // "7" === 7 : falso
+
+
 function Calcular(){
     let valorHtml=document.getElementById("dinheiroConta")
     let valorJs=Number(valorHtml.value)
