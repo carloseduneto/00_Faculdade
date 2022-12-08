@@ -4,6 +4,7 @@ produtos["6JH"]={"nome": "Tapete", "Preço": 123.6}
 produtos["2XC"]= {"nome": "Teclado", "Preço": 95.0}
 produtos["3AV"]={"nome": "Monitor", "Preço": 1234.6}
 
+print(produtos)
 
 
 for chave in produtos:

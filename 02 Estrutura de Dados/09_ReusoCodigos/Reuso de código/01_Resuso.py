@@ -1,4 +1,4 @@
-from Biblioteca import lerMatriz
+-from Biblioteca import lerMatriz
 from Biblioteca import somar
 from Biblioteca import nomeLeide
 from Biblioteca import calculaMedia

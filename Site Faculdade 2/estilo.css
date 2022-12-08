@@ -5,17 +5,19 @@
 .embaixo{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .estrela{
     color: gold;
     margin-top: 4px;
+    margin-left: 8px;
 }
 
 .tempo{
     color: white;
     margin-top: 4px;
+    margin-left: 8px;
 }
 
 
@@ -50,6 +52,7 @@
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
 }
 
+
 .conquistas{
     display: flex;
     width: 1182px;
@@ -58,9 +61,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
 }
+
 
 .interrogacao{
     display: flex;
@@ -68,15 +72,38 @@
     height: 500px;
     
     border-radius: 20px;
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     background: linear-gradient(316.83deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 69.27%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1591522811280-a8759970b03f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.endereco{
+    display: flex;
+    width: 1182px;
+    height: 350px;
+    background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/7683873/pexels-photo-7683873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+}
+.ingresso{
+    display: flex;
+    width: 1182px;
+    height: 350px;
+    background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/8199169/pexels-photo-8199169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position-y:15%;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
 }
 
 .margem{
@@ -282,6 +309,28 @@
     display: flex;
     flex-direction: row;
 }
+
+.espaco{
+    margin-left: 20px;
+
+}
+
+
+
+.base{
+margin-top: 100px;
+background: #787878;
+width: auto;
+color: white;
+display: flex;
+justify-content: center;
+}
+
+.nomes{
+    display: flex;
+    justify-content: center;
+}
+
 .seta{
     display: flex;
     align-items: center;
@@ -379,7 +428,7 @@ button:hover{
 .estrelaTempo{
     /* border: solid rgba(255, 255, 255, 0); */
     height: 50px;
-    width: 50px;
+    width: 100px;
     /* transition:ease-out 200ms; */
     display: flex;
 
@@ -424,6 +473,16 @@ button:hover{
 
 }
 
+.titulo3{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    /* transition: ease-out 500ms; */
+
+}
+
+
 .escrito{
     margin-left: 20px;
 }
@@ -443,6 +502,21 @@ button:hover{
         display: flex;
         width: 400px;
         height: 350px;
+        
+    }
+
+    .ingresso{
+        display: flex;
+        width: 400px;
+        height: 350px;
+        background-size: cover;
+        
+    }
+    
+    .endereco{
+        display: flex;
+        width: 400px;
+        height: 400px;
         
     }
 
