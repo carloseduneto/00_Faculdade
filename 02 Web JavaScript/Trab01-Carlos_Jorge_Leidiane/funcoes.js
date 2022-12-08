@@ -38,6 +38,14 @@ function imc(){
     let calculoImc=peso/(altura*altura);
     let calculoImcDuasCasas=calculoImc.toFixed(2);
     
+se (peso > 0 e altura > 0){
+    se (calculoPeso <18){
+        resultadoImc.innerHTML="Você está abaixo do peso"
+    }
+}senão{
+    resultadoImc.innerHTML="Digite um valor"
+}
+
     if (peso>0 && altura>0){
         if(calculoImcDuasCasas<18.5){
         resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está abaixo do peso!`;
@@ -142,7 +150,8 @@ function calculaPagamento(){
     let pagAVista=(valorPrdutoDuasCasas*0.9).toFixed(2);
     let pagDebto=(valorPrdutoDuasCasas*0.95).toFixed(2);
     let pag3x=(valorPrdutoDuasCasas*1.2).toFixed(2);
-    
+
+
     if(valorPrdutoDuasCasas>0){ 
         if(pagamento == "aVista"){
             resultadoPagamento.innerHTML=`Desconto de 10%, valor R$ ${pagAVista}`;

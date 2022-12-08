@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <title>Revisão</title>
 </head>
+<style>
+    *{
+        font-family: Roboto, sans-serif;
+    }
+</style>
+
 <body>
     <!-- é uma linguagem de script utilizada para a criaçao de scripts (blocos de codigos)
     q permite interativade nas paginas web  -->
+    <form action="" id="exercicio">
+    <label for="dinheiro">Dinheiro na carteira</label>
+    <input type="number" name="dinheiro" id="dinheiroConta">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <input type="button" value="limpar" onclick="limpar()">
+    <div id="resposta"></div>
+    </form>
+
+    <form action="" id="exercicio2">
+        <label for="diaDaSemana">Dia da Semana</label>
+
+        <input type="number" name="diaDaSemana" id="diaDaSemana">
+        <input type="button" value="Exibir" onclick="Exibir()">
+        <input type="button" value="Limpar" onclick="Limpar()">
+        <p id="Resposta1"></p>
+
+    </form>
 </body>
 <!-- Aqui vai puxar os códigos -->
 <script src="roteiro.js"> </script>

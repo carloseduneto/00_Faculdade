@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
+    /* margin: 0; */
 }
 
 .embaixo{
@@ -93,6 +94,7 @@
     border-radius: 20px;
     margin-top: 20px;
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
+    margin-bottom: 100px;
 }
 .ingresso{
     display: flex;
@@ -102,7 +104,7 @@
     background-size: cover;
     background-position-y:15%;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 100px;
     box-shadow: rgba(27, 11, 52, 0.3) 4px 4px 4px 0px;
 }
 
@@ -318,7 +320,7 @@
 
 
 .base{
-margin-top: 100px;
+/* margin-top: 100px; */
 background: #787878;
 width: auto;
 color: white;
@@ -487,7 +489,14 @@ button:hover{
     margin-left: 20px;
 }
 
-@media(max-width: 1000px){
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #787878;
+
+}
+
+@media(max-width: 500px){
     .caixaPrincipal{
         flex-direction: column;
         align-items: center;
@@ -517,6 +526,7 @@ button:hover{
         display: flex;
         width: 400px;
         height: 400px;
+        margin-bottom: 100px;
         
     }
 
@@ -531,5 +541,14 @@ button:hover{
         height: 432px;
 
     }
+
+    .base{
+        /* margin-top: 100px; */
+        background: #787878;
+        width: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        }
 
 }
