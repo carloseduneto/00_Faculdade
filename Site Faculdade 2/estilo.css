@@ -26,7 +26,7 @@
 .caixaPrincipal{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: center;
 }
 
 .a{
@@ -43,7 +43,7 @@
 
 .inicio{
     display: flex;
-    width: 1182px;
+    width: 900px;
     height: 350px;
     background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(libertas.png);
     background-size: cover;
@@ -56,7 +56,7 @@
 
 .conquistas{
     display: flex;
-    width: 1182px;
+    width: 900px;
     height: 250px;
     background: linear-gradient(316.83deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/8177922/pexels-photo-8177922.jpeg);
     background-size: cover;
@@ -69,7 +69,7 @@
 
 .interrogacao{
     display: flex;
-    width: 1182px;
+    width: 900px;
     height: 500px;
     
     border-radius: 20px;
@@ -86,7 +86,7 @@
 
 .endereco{
     display: flex;
-    width: 1182px;
+    width: 900px;
     height: 350px;
     background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/7683873/pexels-photo-7683873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
@@ -98,7 +98,7 @@
 }
 .ingresso{
     display: flex;
-    width: 1182px;
+    width: 900px;
     height: 350px;
     background: linear-gradient(316.83deg, rgba(251, 0, 0, 0.5) 0%, rgba(255, 148, 148, 0.408854) 69.27%, rgba(255, 148, 148, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(https://images.pexels.com/photos/8199169/pexels-photo-8199169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
@@ -314,6 +314,7 @@
 
 .espaco{
     margin-left: 20px;
+    margin-right: 20px;
 
 }
 
@@ -321,11 +322,12 @@
 
 .base{
 /* margin-top: 100px; */
-background: #787878;
+/* background: #e42828; */
 width: auto;
 color: white;
 display: flex;
-justify-content: center;
+justify-content: left;
+    flex-direction: row;
 }
 
 .nomes{
@@ -548,7 +550,7 @@ footer{
         width: 400px;
         color: white;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         }
 
 }
