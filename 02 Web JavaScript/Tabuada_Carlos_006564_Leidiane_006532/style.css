@@ -1,0 +1,52 @@
+*{
+    font-family: Roboto, sans-serif;
+    background: rgb(234, 183, 191);
+    color: rgb(150, 93, 101);
+    /* font-size: 20px; */
+}
+
+.principal{
+    align-items: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+
+input[type=button]{
+    border: 2px solid rgb(150, 93, 101);
+    background-color: rgb(234, 183, 191);
+    color: rgb(234, 183, 191);
+    cursor: pointer;
+    border-color: rgb(150, 93, 101);
+    color: rgb(150, 93, 101);
+    font-size: 20px;
+}
+
+
+input[type=button]:hover{
+    background-color: rgb(150, 93, 101);
+    color: rgb(234, 183, 191);
+}
+
+.caixa{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+td, th {
+    border: 1px solid ;
+    text-align: left;
+    padding: 8px;
+    border-collapse: collapse;
+    justify-content: center;
+    text-align: center;
+  }

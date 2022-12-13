@@ -14,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     animation: 500ms;
+    transition: ease-in-out;
 }
 
 #movimenta{

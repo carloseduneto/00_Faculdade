@@ -28,7 +28,7 @@ function Calcular(){
    
 }
 
-function limpar() {
+function Limpar() {
     document.getElementById("exercicio").reset()
     resposta.innerHTML=""
     
