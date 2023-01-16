@@ -7,3 +7,5 @@ for i in range(10):
         while num[i]==num[j]:
             print("\nNúmero já digitado!")
             num[i]=(input(f"\nDigite um número para a posição {i+1}: "))
+
+print("Essa particulas ate que são bunitinhas")
