@@ -22,7 +22,7 @@ function conta(){
 
 function limparConta() {
     document.getElementById("exercicio").reset()
-    resultadosContas.innerHTML="";
+    resultadosContas.innerHTML="⠀";
 }
 
 
@@ -38,14 +38,6 @@ function imc(){
     let calculoImc=peso/(altura*altura);
     let calculoImcDuasCasas=calculoImc.toFixed(2);
     
-se (peso > 0 e altura > 0){
-    se (calculoPeso <18){
-        resultadoImc.innerHTML="Você está abaixo do peso"
-    }
-}senão{
-    resultadoImc.innerHTML="Digite um valor"
-}
-
     if (peso>0 && altura>0){
         if(calculoImcDuasCasas<18.5){
         resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está abaixo do peso!`;
@@ -66,7 +58,7 @@ se (peso > 0 e altura > 0){
 function limparImc() {
     let resultadoImc=document.getElementById("resultadosImc")
     document.getElementById("exercicio").reset()
-    resultadoImc.innerHTML="";
+    resultadoImc.innerHTML="⠀";
 }
 
 function normal(){
@@ -136,7 +128,7 @@ function especial(){
 function limparIdade() {
     let resultadoIdade=document.getElementById("resultadoIdade")
     document.getElementById("exercicio").reset()
-    resultadoIdade.innerHTML="";
+    resultadoIdade.innerHTML="⠀";
 }
 
 function calculaPagamento(){
@@ -170,7 +162,7 @@ function calculaPagamento(){
 function limparProdutos() {
     let resultadoPagamento=document.getElementById("resultadoPagamento")
     document.getElementById("exercicio").reset()
-    resultadoPagamento.innerHTML="";
+    resultadoPagamento.innerHTML="⠀";
 }
 
 function calculaVolume() {
@@ -195,5 +187,5 @@ function calculaVolume() {
 function limparPiscina() {
     let resultadosVolume=document.getElementById("resultadosVolume")
     document.getElementById("exercicio").reset()
-    resultadosVolume.innerHTML="";
+    resultadosVolume.innerHTML="⠀";
 }

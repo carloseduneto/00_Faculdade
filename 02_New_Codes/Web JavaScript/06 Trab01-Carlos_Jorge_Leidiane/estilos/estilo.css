@@ -4,22 +4,224 @@
     margin: 0;
     padding: 0;
 } */
-.fundoContas{
-    background-image: url(https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-    background-size: cover;
+
+header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
-.fundoImc{
-    background-image: url(https://images.unsplash.com/photo-1627820751275-e44b937c5d33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-    background-size: cover;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-.fundoEleicoes{
-    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2022/08/12193807/urna-eletronica-5.jpg);
-    background-size: cover;
+
+.imagemInicio{
+    display: flex;
+    justify-content: center;
 }
+
+.topoMenu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topicos{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 401px;
+    border-radius: 20px;
+    }
+    
+.caixaDev{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    height: 200px;
+    border-radius: 20px;
+    }
+
+.lateral{
+    display: none;
+}
+
+.rodape{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 800px;
+    height: 125px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:900px) {
+    .rodape{
+        display: flex;
+        justify-content:space-around;
+        align-items: self-start;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        padding-left: 50px ;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topicos{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .margem{
+        margin: 15px;
+    }
+
+    .perfis{
+        margin-bottom: 20px;
+    }
+
+    .topoMenu{
+        justify-content: left;
+    }
+
+    .lateral{
+        display: block;
+    }
+
+    .inicio{
+        filter:brightness(50%) invert() grayscale();
+    }
+
+
+    .ocultar500{
+        display: none;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content:space-around;
+        align-items: self-start;
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+        padding-left: 50px ;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+
+    .menuLateral{
+        padding-top: 10px;
+    }
+
+    .menuLateral a {
+        font-size: 18px;
+    }
+
+    .tracinhos{
+        display: show;
+        display: flex;
+        justify-content: left;
+    }
+
+    .tracinhos:hover{
+        cursor: pointer;
+    }
+
+    .menuLateral{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 100px;
+        transition: .5s;
+        animation: ease-in-out;
+
+    }
+    
+
+    .menuLateral a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .menuLateral a:hover{
+        color: #f1f1f1;
+    }
+    
+    .menuLateral .fecharBarra{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #main{
+        transition: margin-left .5s;
+        padding: 20px;
+    
+    }
+
+    .maior{
+        font-size: 25px;
+    }
+
+
+
+
+    .topoMenu{
+        width: 100%;
+        position: fixed;    
+        top: 0px;
+        left: 0px;
+        justify-content:space-around;
+        margin-top: 0;
+    }
+
+
+
+    .caixaDev{
+        display: flex;
+        justify-content: left;
+    }
+}
+
+
+
+
+footer{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 
 
 .fundoProdutos{
-    background-image: url(https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url();
     background-size: cover;
 }
 .fundoPiscina{
@@ -36,31 +238,11 @@
 
 .rodapeCentralizar{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.rodapeContas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 125px;
-    color: white;
-    background: rgba(54, 35, 11, 0.5);
-    border-radius: 20px;
-}
 
-.rodapeImc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 125px;
-    color: white;
-    background: rgba(116, 79, 85, 0.5);
-    border-radius: 20px;
-}
 
 .rodapeEleicoes{
     display: flex;
@@ -105,29 +287,8 @@
     border-radius: 20px;
 }
 
-.CaixaConta{
-width: 400px;
-height: 401px;
-color: white;
-background: rgba(54, 35, 11, 0.5);
-border-radius: 20px;
-}
 
-.CaixaContaDev{
-    width: 800px;
-    height: 200px;
-    color: white;
-    background: rgba(54, 35, 11, 0.5);
-    border-radius: 20px;
-    }
 
-.CaixaImc{
-    width: 400px;
-    height: 300px;
-    color: white;
-    background: rgba(116, 79, 85, 0.5);
-    border-radius: 20px;
-    }
 .CaixaEleicoes{
     width: 400px;
     height: 250px;
@@ -162,7 +323,7 @@ display:inline;
     display:inline-block;
 }
 
-.contas {
+.barraItens {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -184,29 +345,11 @@ display:inline;
     text-decoration: none;
   }
   
-  .contas li a:hover:not(.ligadoConta) {
-    background-color: #FF8300;
-  }
-  
-  .piscina li a:hover:not(.ligadoPiscina) {
-    background-color: #00cdb8;
-  }
 
-  .imc li a:hover:not(.ligadoImc) {
-    background-color: #dd9ba6;
-  }
 
-  .eleicoes li a:hover:not(.ligadoEleicoes) {
-    background-color: #6848b3;
-  }
-  
-  .produtos li a:hover:not(.ligadoProdutos) {
-    background-color: #d53e43;
-  }
 
-  .ligadoConta {
-    background-color: #FF8300;
-  }
+
+
 
   .ligadoImc {
     background-color: #dd9ba6;
@@ -312,7 +455,6 @@ input[type=number] {
     color: #898989;
     align-items: center;
     justify-content:center;
-    
     width: 90px;
     height: 20px;
   }
@@ -329,20 +471,14 @@ select{
     height: 20px;
 }
 
-.botaoContas{
-    border: solid #FF8300 ;
-    background: rgba(54, 35, 11, 0.0);
-    color: white;
+.botao{
     border-radius: 20px;
     cursor: pointer;
     height: 30px;
     width: 80px;
-
 }
 
-.botaoContas:hover{
-    background-color: #FF8300;
-}
+
 
 .botaoImc{
     border: solid #dd9ba6 ;

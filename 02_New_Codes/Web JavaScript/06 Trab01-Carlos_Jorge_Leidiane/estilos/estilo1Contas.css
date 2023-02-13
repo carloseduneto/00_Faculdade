@@ -1,0 +1,80 @@
+.fundo{
+    background-image: url(https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+}
+
+
+.rodape{
+    color: white;
+    background: rgba(54, 35, 11, 0.5);
+}
+
+
+
+.caixa{
+    color: white;
+    background: rgba(54, 35, 11, 0.5);
+    }
+    
+
+
+.barraItens li a:hover:not(.ligadoItem) {
+        background-color: #FF8300;
+}
+
+.ligadoItem {
+    background-color: #FF8300;
+  }
+
+  .botao:hover{
+    background-color: #FF8300;
+}
+
+.botao{
+    border: solid #FF8300 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+}
+
+
+@media only screen and (max-width:500px)  {
+
+    .menuLateral{
+        background: rgba(54, 35, 11, 0.999);
+
+    }
+    
+
+    .menuLateral a{
+        color: #818181;
+    }
+    
+    .menuLateral a:hover{
+        color: #f1f1f1;
+    }
+    
+
+
+    .maior{
+        color: #dadada;
+    }
+
+    .fundo{
+        background-position-x: -350px;
+    }
+
+
+    .topoMenu{
+        background: #926429;
+        border-top: 10px solid #926429;
+        border-bottom: 10px solid #926429;
+        box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+        padding-top: 50px solid #929292;
+    }
+
+    .botao{
+        background-color: #FF8300;
+    }
+
+
+}

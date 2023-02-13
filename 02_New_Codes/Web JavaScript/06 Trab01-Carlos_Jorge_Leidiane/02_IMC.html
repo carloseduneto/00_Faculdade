@@ -5,39 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo IMC</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" href="logoTitulo.svg">
-</head>
-<body align="center" class="fundoImc">
-    <header>
-        <table>
-            <a href="index.html">
-            <div align="center"><img src="logo.svg" alt="Início" height="60px" class="inicio">
-            </a></div>
-            <tr>
-                <td><nav align="center" class="navegacao">
-                    <div align="center">
-                        <ul class="nav imc">
-            
-                   <li> <a href="01_ContasCasa.html">Contas da Casa</a> </li>
-                    <li><a href="02_IMC.html" class="ligadoImc">IMC</a> </li>
-                   <li> <a href="03_Eleicoes.html">Eleições</a></li>
-                   <li> <a href="04_Produtos.html">Produtos</a> </li>
-                   <li> <a href="05_Piscina.html">Piscina</a></li>
-                </ul>
-            </div>
-                </nav></td>
-            </tr>
-        </table>
+
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="icon" type="svg" href="images/logoTitulo.svg">
+    <link rel="stylesheet" href="estilos/estilo2Imc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
+    <script src="scripts/funcoes.js" defer></script>
+    <script src="scripts/menuLateral.js" defer></script>
+</head>
+
+<body  class="fundo">
+    <header>
+        <div class="topoMenu" >
+            
+            <div class="vazio">
+
+            </div>
+
+            <div class="imagemInicio">
+                <a href="index.html">
+                <img src="images/logo.svg" alt="Início" height="60px" class="inicio">
+                </a>
+            </div>
+    
+    <section class="lateral">
+        <div id="barraLateral" class="menuLateral">
+            <a href="javascript:void(0)" class="fecharBarra" onclick="fecharBarra()">&times</a>
+            <a href="01_ContasCasa.html">Contas</a>
+            <a href="02_IMC.html">IMC</a>
+            <a href="03_Eleicoes.html">Eleições</a>
+            <a href="04_Produtos.html">Produtos</a>
+            <a href="05_Piscina.html">Piscina</a>
+        </div>
+        
+        
+        <!-- Abrir a barra lateral -->
+        <span onclick="abrirBarra()" class="tracinhos" >
+            <i class="fa-solid fa-bars maior"></i>
+        </span>
+    </section>
+
+
+</div>
+    
+
+        <div class="ocultar500">
+            <nav align="center" class="navegacao">
+                <div align="center">
+                    <ul class="nav barraItens">
+        
+               <li > <a href="01_ContasCasa.html" >Contas da Casa</a> </li>
+                <li><a href="02_IMC.html"   class="ligadoItem">IMC</a> </li>
+               <li> <a href="03_Eleicoes.html">Eleições</a></li>
+               <li> <a href="04_Produtos.html">Produtos</a> </li>
+               <li> <a href="05_Piscina.html">Piscina</a></li>
+            </ul>
+        </div>
+    </nav>
+        </div>
+
     </header>
-    <div class="principal">
-    <div class="CaixaImc">
+    <div class="principal2" id="tudo" onclick="fecharBarra()">    
+    <div class="principal ">
+    <div class="caixa">
     <form action="#" id="exercicio">
     <h1>IMC</h1>
         <label for="peso">Peso</label>
@@ -48,28 +79,37 @@
         <input type="number" id="altura" placeholder=" m">
         <br><br>
 
-        <input type="button" value="Calcular" onclick="imc()" class="botaoImc">
-        <input type="button" value="Limpar" onclick="limparImc()" class="botaoImc">
+        <input type="button" value="Calcular" onclick="imc()" class="botao">
+        <input type="button" value="Limpar" onclick="limparImc()" class="botao">
 
         <br><br>
         <div>
-            <p id="resultadosImc"></p>
+            <p id="resultadosImc">⠀</p>
         </div>
     </form>
     </div>
     </div>
+    </div>
     <footer>
         <h3 style="color: white;"><b>Desenvolvedores:</b></h3>
-        <div class="rodapeCentralizar">
-                <table class="rodapeImc">
+        <div class="rodapeCentralizar ">
+                
+            <section class="rodapeContas rodape caixaDev">
 
-                        <td width="500px"><div><img src="leide.png" alt="" class="leide"><br>Leidiane Rodrigues<br>leidianersmg@gmail.com </div></td>
-                        <td width="500px"><div><img src="jorge.png" alt="" class="jorge"><br>Jorge Caetano<br>jorgecaetano.dev@outlook.com</div></td>
-                        <td width="500px"><div><img src="carlos.png" alt="" class="carlos"> <br>Carlos Neto <br>carloseduneto.dev@gmail.com </div></td>
-                    </tr>
-                </table>    
+                    <section class="perfis">
+                        <img src="images/leide.png" alt="" class="jorge"><br>Leidiane Rodrigues<br>leidianersmg@gmail.com</td>
+                    </section>
+                    
+                    <section class="perfis">
+                        <img src="images/jorge.png" alt="" class="jorge"><br>Jorge Caetano<br>jorgecaetano.dev@outlook.com</td>
+                    </section>
+    
+                    <section class="perfis">
+                        <img src="images/carlos.png" alt="" class="carlos"><br>Carlos Neto <br>carloseduneto.dev@gmail.com
+                    </section>  
+                </section>        
         </div>
-    <h3 style="color: white;">2022</h3>   
+    <h3 style="color: white;">2022</h3>    
     </footer>
 </body>
 <div>
@@ -79,5 +119,4 @@
  </div>    
     </div>
 </div>
-<script src="funcoes.js"></script>
 </html>
