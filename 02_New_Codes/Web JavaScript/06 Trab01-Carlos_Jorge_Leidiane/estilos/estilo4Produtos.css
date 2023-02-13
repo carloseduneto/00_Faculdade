@@ -68,8 +68,8 @@
 
     .topoMenu{
         background: #651814;
-        border-top: 10px solid #651814;
-        border-bottom: 10px solid #651814;
+        /* border-top: 10px solid #651814;
+        border-bottom: 10px solid #651814; */
         box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
         padding-top: 50px solid #929292;
     }

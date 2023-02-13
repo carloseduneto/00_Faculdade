@@ -15,8 +15,11 @@ function conta(){
 
     if (pessoas>0){
         resultadosContas.innerHTML=`Valor total: ${soma} <br> Valor para cada pessoa: ${divisao}`;
+        resultadosContas.style.fontSize="16px";
+
     }else{
         resultadosContas.innerHTML=`Insira um valor maior que zero`;
+        resultadosContas.style.fontSize="16px";
     }
 }
 
@@ -41,17 +44,25 @@ function imc(){
     if (peso>0 && altura>0){
         if(calculoImcDuasCasas<18.5){
         resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está abaixo do peso!`;
-        }else if(calculoImcDuasCasas>=18.5 && calculoImcDuasCasas<=25){
+        resultadoImc.style.fontSize="16px";
+
+    }else if(calculoImcDuasCasas>=18.5 && calculoImcDuasCasas<=25){
             resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, peso ideal!`;  
+            resultadoImc.style.fontSize="16px";
+
         }else if( calculoImcDuasCasas>25 && calculoImcDuasCasas<=30){
             resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está com sobrepeso!`; 
+            resultadoImc.style.fontSize="16px";
         }else if (calculoImcDuasCasas>30 && calculoImcDuasCasas<=40){
             resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está com obesidade!`;
+            resultadoImc.style.fontSize="16px";
         }else if (calculoImcDuasCasas>40){
             resultadoImc.innerHTML=`IMC: ${calculoImcDuasCasas}, você está com obesidade mórbida!`;
+            resultadoImc.style.fontSize="16px";
         }
     }else{
         resultadoImc.innerHTML=`Insira um valor maior que zero`;
+        resultadoImc.style.fontSize="16px";
     }
 }
 
@@ -76,20 +87,26 @@ function normal(){
             if (idade>=16){
                 if(idade>=16 && idade<18){
                 resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto é opcional !`;
+                resultadoIdade.style.fontSize="16px";
             
                 }else if(idade>=18 && idade<=70){
                     resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto obrigatório!`;  
+                    resultadoIdade.style.fontSize="16px";
                 }else if(idade>70){
                     resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto opcional!`; 
+                    resultadoIdade.style.fontSize="16px";
                 }
             }else{
                 resultadoIdade.innerHTML=`Sua idade: ${idade} anos, não permitido!`;
-                }
+                resultadoIdade.style.fontSize="16px";
+            }
         }else{
             resultadoIdade.innerHTML=`Sua idade: ${idade} anos, inválida!`;
+            resultadoIdade.style.fontSize="16px";
         }
     }else{
         resultadoIdade.innerHTML=`Digite um ano inferior à ${anoAtual}`
+        resultadoIdade.style.fontSize="16px";
     }
 
 }
@@ -108,20 +125,28 @@ function especial(){
             if (idade>=16 ){
                 if(idade>=16 && idade<18){
                     resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto opcional!`;
+                    resultadoIdade.style.fontSize="16px";
             
                 }else if(idade>=18 && idade<=60){
                     resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto obrigatório!`;  
+                    resultadoIdade.style.fontSize="16px";
                 }else if(idade>60){
                     resultadoIdade.innerHTML=`Sua idade: ${idade} anos, voto opcional!`; 
+                    resultadoIdade.style.fontSize="16px";
                 }
             }else{
                 resultadoIdade.innerHTML=`Sua idade: ${idade} anos, não permitido!`;
+                resultadoIdade.style.fontSize="16px";
+
             }
         }else{
             resultadoIdade.innerHTML=`Sua idade: ${idade} anos, inválida!`;
+            resultadoIdade.style.fontSize="16px";
+
         }
     }else{
         resultadoIdade.innerHTML=`Digite um ano inferior à ${anoAtual}`;
+        resultadoIdade.style.fontSize="16px";
     }
 } 
 
@@ -147,15 +172,24 @@ function calculaPagamento(){
     if(valorPrdutoDuasCasas>0){ 
         if(pagamento == "aVista"){
             resultadoPagamento.innerHTML=`Desconto de 10%, valor R$ ${pagAVista}`;
+            resultadoPagamento.style.fontSize="16px";
+            
         }if(pagamento == "debito"){
             resultadoPagamento.innerHTML=`Desconto de 5%, valor R$ ${pagDebto}`;
+            resultadoPagamento.style.fontSize="16px";
+
         }if(pagamento == "duasVezes"){
             resultadoPagamento.innerHTML=`Valor sem desconto, valor R$ ${valorPrdutoDuasCasas}`;
+            resultadoPagamento.style.fontSize="16px";
+
         }if(pagamento == "tresVezes"){
             resultadoPagamento.innerHTML=`Acréscimo de 20%, valor R$ ${pag3x}`;
+            resultadoPagamento.style.fontSize="16px";
+
         }
     }else{
         resultadoPagamento.innerHTML="Insira um valor maior que zero"
+        resultadoPagamento.style.fontSize="16px";
     }
 }
 
@@ -177,9 +211,11 @@ function calculaVolume() {
 
     let volume = comprimento * profundidade * largura;
     if(volume>0){
-        resultadosVolume.innerHTML = `Volume total da piscina é ${volume} m³.`;
+        resultadosVolume.innerHTML = `Volume total da piscina é ${volume} m³.`
+        resultadosVolume.style.fontSize="16px";
     }else{
-        resultadosVolume.innerHTML="Insira valores maior que zero"
+        resultadosVolume.innerHTML="Insira valores maior que zero";
+        resultadosVolume.style.fontSize="16px";
     }
     
 }
