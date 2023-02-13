@@ -1,0 +1,79 @@
+.fundo{
+    background-image: url(https://images.pexels.com/photos/8332960/pexels-photo-8332960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+.caixa{
+    color: white;
+    background: rgba(12, 58, 63, 0.5);
+    }
+    
+
+    
+    .barraItens li a:hover:not(.ligadoItem) {
+        background-color: #00cdb8;
+}
+
+.ligadoItem {
+    background-color: #00cdb8;
+}
+
+.botao:hover{
+    background-color: #00cdb8;
+}
+
+.botao{
+    border: solid #00cdb8 ;
+    background: rgba(54, 35, 11, 0.0);
+    color: white;
+}
+
+@media only screen and (max-width:500px)  {
+
+    .menuLateral{
+        background: #001b1b;
+
+    }
+    
+
+    .menuLateral a{
+        color: #818181;
+    }
+    
+    .menuLateral a:hover{
+        color: #f1f1f1;
+    }
+    
+
+
+    .maior{
+        color: #dadada;
+    }
+
+    .fundo{
+        background-position-x: -550px;
+    }
+
+
+    .topoMenu{
+        background: #1075dd;
+        border-top: 10px solid #1075dd;
+        border-bottom: 10px solid #1075dd;
+        box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+        padding-top: 50px solid #929292;
+    }
+
+    .botao{
+        background-color: #00cdb8;
+    }
+
+
+
+}
