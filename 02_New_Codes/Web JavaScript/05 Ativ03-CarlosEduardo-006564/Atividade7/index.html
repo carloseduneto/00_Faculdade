@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+        
+        <title>🔢 Calculadora</title>
+        <script src="01_Calculadora.js" defer></script>
+
+
+        <!-- Links  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body align="center">
+    <div class="principal">
+    <!-- <div>
+    <h1>🔢 Calculadora</h1>
+    <label for="numero1">Número 1</label>
+    <input type="number" value="numero1" id="numero1" style="width:50px ;" class="texto">
+    <br><br>
+    <label for="numero2">Número 2</label>
+    <input type="number" value="numero2" id="numero2" style="width:50px ;" class="texto">
+    <br><br> -->
+    <form action="#" id="exercicio">
+        <section class="botoes">
+
+
+            <div style="color:black">
+                <p class="titulo">CALCULADORA</p>
+            </div>
+
+            <div class="visor">
+                <p id="superior">134+</p>
+                <div id="exibicao">0</div>
+            </div>
+
+            <div>
+            <input type="button" value="AC" class="simbolos" onclick="limpar()">
+            <input type="button" value="%"class="numeros">
+            <input type="button" value="±"class="simbolos" onclick="reverso()">
+            <input type="button" value="÷"class="numeros">
+            </div>
+
+            <div>
+                <input type="button" value="7"class="numeros">
+                <input type="button" value="8"class="numeros">
+                <input type="button" value="9"class="numeros">
+                <input type="button" value="x"class="numeros">
+            </div>
+
+            <div>
+                <input type="button" value="4" class="numeros">
+                <input type="button" value="5"class="numeros">
+                <input type="button" value="6" class="numeros">
+                <input type="button" value="-"class="numeros">
+            </div>
+
+            <div>
+                <input type="button" value="1" class="numeros" id="numero1" onmousedown="clicou()" onmouseup="saiu()">
+                <input type="button" value="2" class="numeros" id="numero2">
+                <input type="button" value="3" class="numeros">
+                <input type="button" value="+" class="numeros">
+            </div>
+
+            <div>
+                <input type="button" value="⌫" class="numeros">
+                <input type="button" value="0" class="numeros">
+                <input type="button" value="," class="numeros">
+                <input type="button" value="=" class="numeros">
+            </div>
+            
+
+        </section>
+
+<!-- 
+    <input type="button" value="Calcular" onclick="operacao()" class="botao clique">
+    <input type="button" value="Limpar" onclick="limpar()" class="botao clique">
+    <div style="display: flex; align-items: center; justify-content: center;">
+    <p id="resultados" align="left"></p>
+    </div> -->
+    </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="00_RemoveFonteFeia.css">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
-
-    <title>🔢 Calculadora</title>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="00_RemoveFonteFeia.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+        
+        <title>🔢 Calculadora</title>
+        <script src="01_Calculadora.js defer"></script>
     
 </head>
 <body align="center">
@@ -19,6 +20,8 @@
     <label for="numero2">Número 2</label>
     <input type="number" value="numero2" id="numero2" style="width:50px ;" class="texto">
     <br><br>
+
+
     <input type="button" value="Calcular" onclick="operacao()" class="botao clique">
     <input type="button" value="Limpar" onclick="limpar()" class="botao clique">
     <div style="display: flex; align-items: center; justify-content: center;">
@@ -28,5 +31,4 @@
     </div>
     </form>
 </body>
-<script src="01_Calculadora.js"></script>
 </html>
