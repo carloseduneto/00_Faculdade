@@ -72,15 +72,6 @@ function interecaoCliqueTeclado(event) {
       var simbolo = event.target.value;
       registroCalculo = false
     }
-    
-    if (event.target.classList.contains("simbolos2")) {
-      var simbolo2 = event.target.value;
-      registroCalculo = false
-    }
-    // ! Atenção
-    //TODO faça tudo da melhor forma possível
-    // * muito importante ressaltar que
-    // ? essa obra é realmente necessária
         
     if (event.target.classList.contains("vazio")) {
       var vazio = event.target.value;
@@ -93,117 +84,20 @@ function interecaoCliqueTeclado(event) {
     switch (event.key) {
       case "1":
         let numero1 = document.getElementById("numero1")
-        // clicar(numero1)
-        valor = "1"
-        lista.push(valor);
+        clicar(numero1)
+        lista.push('1');
         break;
         
-        
-      case "2":
-        let numero2 = document.getElementById("numero2");
-        // clicar(numero2);
-        valor = "2"
-        lista.push(valor);
-        break
+        case "2":
+          let numero2 = document.getElementById("numero2");
+          clicar(numero2);
+          lista.push('2');
+          break
           
-      case "3":
-        valor = "3"
-        lista.push(valor);
-        break;
-      
-      case "4":
-        valor = "4"
-        lista.push(valor);
-        break;
-      
-      case "5":
-        valor = "5"
-        lista.push(valor);
-        break;
-      
-      case "6":
-        valor = "6"
-        lista.push(valor);
-        break;
-      
-      case "7":
-        valor = "7"
-        lista.push(valor);
-        break;
-      
-      case "8":
-        valor = "8"
-        lista.push(valor);
-        break;
-      
-      case "9":
-        valor = "9"
-        lista.push(valor);
-        break;
-      
-      case "0":
-        valor = "0";
-        lista.push(valor);
-        break;
-      
-      case ",":
-        valor = ",";
-        lista.push(valor);
-        break;
-      
-      
-      //Simbolos
-      
-      case "Delete":
-        limpar()
-        lista.push("0")
-      registroCalculo = false
-        break;
-      
-      case "%":
-        simbolo = "%"
-        registroCalculo = false
-        break;
-      
-      case "/":
-        simbolo = "÷"
-        registroCalculo = false
-        break;
-      
-      case "+":
-        simbolo = "+"
-        registroCalculo = false
-        break;
-      
-      case "-":
-        simbolo = "-"
-        registroCalculo = false
-        break;
-      
-      case "*":
-        simbolo = "x"
-        registroCalculo = false
-        break;
-      
-      case "Backspace":
-        simbolo = "⌫"
-        registroCalculo = false
-        break;
-      
-      case "Enter":
-        simbolo = "="
-        registroCalculo = false
-        break;
-        
-        default:
-        registroCalculo = false
-        
-        break;
-          
-      
-        
+          default:
+            break;
           }      
-          console.log(event.key)
+          
           
         }
         
@@ -218,8 +112,7 @@ function interecaoCliqueTeclado(event) {
       lista.unshift("0");
       console.log("Passou")
     }
-
-    lista.push(valor)   //Falta definir valor = ao teclado
+    lista.push(valor)
     console.log(valor)
     registroCalculo = false
 
@@ -263,19 +156,10 @@ function interecaoCliqueTeclado(event) {
         lista.pop()
     }
     
-  
-    
+
+
 
   }
-  
-  else if (simbolo2 =="±") {
-    if (lista[0] == "-") {
-      lista.shift()
-    } else {
-      lista.unshift("-")
-    }
-  }
-  
   else if (simbolo == "%") {
     var temporario3;
     temporario3 = (valorDaVariavel * (temporario / 100))
@@ -288,31 +172,38 @@ function interecaoCliqueTeclado(event) {
     console.log(valorDaVariavel)
     limparLista(lista)
     lista=tranformaEmLista(valorDaVariavel)
-  }
-  
-  
-  else if (simbolo == "=") {
-    switch (operador) {
-      case "+":
-        registroCalculo = true
-        calcularIgual("+")
-        break;
-        
-        case "-":
+    }
+
+    
+    else if (simbolo == "=") {
+      switch (operador) {
+        case "+":
           registroCalculo = true
-          calcularIgual("-")
-          break;
+          if (contarCasasDecimais(temporario) > 10) {
+            temporario = temporario.toFixed(8);
+          }
           
-          case "÷":
-          registroCalculo = true
-          calcularIgual("÷")
-          break;
+
+
+          temporario = temporario.replace(".", ",")
+          valorDaVariavel = valorDaVariavel.replace(".", ",")
           
-        case "x":
-          registroCalculo = true
-          calcularIgual("x")
-          break;
           
+          
+          imprimirSuperior(temporario + " + " + valorDaVariavel + " = ")
+          
+          
+          
+          temporario = temporario.replace(/,/g, ".")
+          valorDaVariavel = valorDaVariavel.replace(/,/g, ".")
+          
+          
+          valorDaVariavel = Number(temporario) + Number(valorDaVariavel);
+          
+          valorDaVariavel = Number(valorDaVariavel)
+          limparLista(lista)
+          lista=tranformaEmLista(String(valorDaVariavel))
+          break;
           
           default:
             break;
@@ -341,16 +232,16 @@ function interecaoCliqueTeclado(event) {
     lista.pop()
   }
   consultaZeros(lista)
-  
+
   valorDaVariavel = (transformaEmVariavel(lista))
   // if (contarCasasDecimais(valorDaVariavel)>10) {
-    //   valorDaVariavel=valorDaVariavel.toFixed(8)
-    // }
-    
-    
-    valorDaVariavel = valorDaVariavel.replace(".", ",")
-    
-    limparLista(lista)
+  //   valorDaVariavel=valorDaVariavel.toFixed(8)
+  // }
+
+
+  valorDaVariavel = valorDaVariavel.replace(".", ",")
+
+  limparLista(lista)
 
 
   // if (valorDaVariavel == "undefined") {
@@ -367,7 +258,6 @@ function interecaoCliqueTeclado(event) {
 
 //PARTE MATEMÁTICA
 function reverso() {
-  console.log(valorDaVariavel)
   valorDaVariavel = valorDaVariavel * (-1);
   valorDaVariavel = String(valorDaVariavel);
   imprimirMaior(valorDaVariavel)
@@ -419,7 +309,6 @@ function limparLista(lista) {
 //    imprimirSuperior("⠀")
 // }
 
-let reset;
  function limpar() {
     // document.getElementById("exercicio").reset()
    imprimirMaior("0")
@@ -429,8 +318,6 @@ let reset;
   //  lista.unshift("0")
    valorDaVariavel = "0"
    temporario = 0
-   console.log(valorDaVariavel)
-   reset = true
 }
 
 function pontoEVirgula(lista, virgulaPonto, oposto) {
@@ -527,17 +414,15 @@ function mais() {
   return temporario;
 }
 function menos() {
-  if (temporario == "comeco" || reset == true) {
-    reset = false
+  if (temporario == "comeco") {
     temporario = Number(valorDaVariavel)
   } else {
     temporario = Number(temporario) - Number(valorDaVariavel)
   }
-  console.log(temporario)
   return temporario;
 }
 function vezes() {
-  if (temporario == "comeco" || temporario==0) {
+  if (temporario == "comeco") {
     temporario = Number(valorDaVariavel)
   } else {
     temporario = Number(valorDaVariavel) * Number(temporario)
@@ -545,7 +430,7 @@ function vezes() {
   return temporario;
 }
 function dividido() {
-  if (temporario == "comeco" || temporario==0) {
+  if (temporario == "comeco") {
     temporario = Number(valorDaVariavel)
   }
   else if(valorDaVariavel == "0"){
@@ -559,90 +444,4 @@ function dividido() {
   
 
   return temporario;
-}
-
-
-
-function calcularIgual(operador) {
-  if (contarCasasDecimais(temporario) > 10) {
-    temporario = temporario.toFixed(8);
-          }
-          
-
-          temporario= String(temporario)
-          temporario = temporario.replace(".", ",")
-          valorDaVariavel = valorDaVariavel.replace(".", ",")
-          
-          console.log(typeof (temporario))
-          console.log("Valor da variavel: ", valorDaVariavel)
-          console.log("Valor temporario: ", temporario)
-          
-          imprimirSuperior(valorDaVariavel  + " " + operador + " " + temporario+ " = ")
-          
-          
-          
-          temporario = temporario.replace("," , ".")
-          valorDaVariavel = valorDaVariavel.replace("," , ".")
-          temporario = Number(temporario)
-          
-          if (operador == "+") {
-            maisIgual();
-            
-          } else if(operador == "-") {
-            menosIgual();
-
-          } else if (operador == "x") {
-            vezesIgual()
-
-          } else if (operador == "÷") {
-            divididoIgual();
-          }     
-
-          salvar = temporario
-          
-          valorDaVariavel = Number(valorDaVariavel)
-          limparLista(lista)
-          lista=tranformaEmLista(String(valorDaVariavel))
-}
-function maisIgual() {
-  if (temporario == "comeco") {
-    temporario = Number(valorDaVariavel)
-  } else {
-    valorDaVariavel = Number(valorDaVariavel) + Number(temporario)
-  }
-  return valorDaVariavel;
-}
-function menosIgual() {
-  if (temporario == "comeco" || reset == true ) {
-    reset = false
-    temporario = Number(valorDaVariavel)
-
-  } else {
-    valorDaVariavel =  Number(valorDaVariavel) - Number(temporario)
-  }
-  return valorDaVariavel;
-}
-function vezesIgual() {
-  if (temporario == "comeco" || temporario==0) {
-    temporario = Number(valorDaVariavel)
-  } else {
-    valorDaVariavel = Number(valorDaVariavel) * Number(temporario)
-  }
-  return valorDaVariavel;
-}
-function divididoIgual() {
-  if (temporario == "comeco" || temporario==0) {
-    temporario = Number(valorDaVariavel)
-  }
-  else if(valorDaVariavel == "0"){
-    temporario = "∞";
-    limparLista(lista)
-    valorDaVariavel = "∞";
-  }
-  else {
-    valorDaVariavel =  Number(temporario) /Number(valorDaVariavel)
-  }
-  
-
-  return valorDaVariavel;
 }

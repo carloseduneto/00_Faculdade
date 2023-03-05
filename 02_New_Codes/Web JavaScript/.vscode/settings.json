@@ -1,4 +1,18 @@
 {
     "compile-hero.disable-compile-files-on-did-save-code": true,
-    "workbench.colorTheme": "Braver's Solarized Light (themed workbench)"
+    "workbench.colorTheme": "Braver's Solarized Light (themed workbench)",
+    "theme-timer.enable": true,
+    "theme-timer.themes": [
+
+        {
+            "theme": "Braver's Solarized Light (themed workbench)",
+            "startTime": "7:00:00",
+            "endTime": "23:00:00"
+        },
+        {
+            "theme": "Visual Studio Dark",
+            "startTime": "23:00:00",
+            "endTime": "7:00:00"
+        }
+    ]
 }
