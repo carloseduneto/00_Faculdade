@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\cecn2\Documents\01_Codigos_Faculdade\03_The_Subtle_Line\Java POO\.metadata\.plugins\org.eclipse.jdt.core
+1650449417.index
+2712118709.index
+1220804736.index
+1894339775.index
+2740675604.index
+3562820738.index
+3600848163.index

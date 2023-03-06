@@ -1,0 +1,11 @@
+package Aula03;
+
+public class Pessoa {
+
+	String Nome = "Carlos Eduardo";
+	
+	public Pessoa() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

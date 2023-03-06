@@ -1,47 +1,51 @@
-{// //PARTE VISUAL
-  // function clicar(tecla){
-  // let teclaPressionada = false;
+//PARTE VISUAL
+let teclaPressionada = false;
+function clicar(tecla) {
 
-  // document.addEventListener('keydown', function(event) {
-  //   teclaPressionada = true;
-  //   tecla.style.boxShadow="1px 1px black";
-  //   tecla.style.position= "relative";
-  //   tecla.style.left='4px';
-  //   tecla.style.top="4px";
-  //   clicou()
-  // });
+  document.addEventListener('keydown', function (event) {
+    teclaPressionada = true;
+    tecla.style.boxShadow = "1px 1px black";
+    tecla.style.position = "relative";
+    tecla.style.left = '4px';
+    tecla.style.top = "4px";
+  });
+    
+}
+
+function desclicar(tecla) {
   
-  // document.addEventListener('keyup', function(event) {
-  //   teclaPressionada = false;
-  //   tecla.style.boxShadow="5px 5px black";
-  //   tecla.style.position= "relative";
-  //   tecla.style.left='0px';
-  //   tecla.style.top="0px";
-  //   saiu()
-  // });}
+  document.addEventListener('keyup', function(event) {
+    teclaPressionada = false;
+    tecla.style.boxShadow="5px 5px black";
+    tecla.style.position= "relative";
+    tecla.style.left='0px';
+    tecla.style.top="0px";
+  });}
       
-  // function clicou(){
-  //   numero1.style.boxShadow="1px 1px black";
-  //   numero1.style.position= "relative";
-  //   numero1.style.left='4px';
-  //   numero1.style.top="4px";
-  // }
-  
-  // function saiu(){
-    //   numero1.style.boxShadow="5px 5px black";
-    //   numero1.style.position= "relative";
-    //   numero1.style.left='0px';
-    //   numero1.style.top="0px";  
-    // }
+  function clicou(tecla){
+    tecla.style.boxShadow="1px 1px black";
+    tecla.style.position= "relative";
+    tecla.style.left='4px';
+    tecla.style.top="4px";
   }
+  
+  function saiu(tecla){
+      tecla.style.boxShadow="5px 5px black";
+      tecla.style.position= "relative";
+      tecla.style.left='0px';
+      tecla.style.top="0px";  
+    }
+
     
 
 
-//PARTE LÓGICA
+//*PARTE LÓGICA
 document.addEventListener('click', interecaoCliqueTeclado);
 
 document.addEventListener('keydown', interecaoCliqueTeclado);
 
+let numero1 = document.getElementById("numero1")
+let numero2 = document.getElementById("numero2");
 
 let lista = []
 let valorDaVariavel="0";
@@ -92,16 +96,16 @@ function interecaoCliqueTeclado(event) {
 
     switch (event.key) {
       case "1":
-        let numero1 = document.getElementById("numero1")
-        // clicar(numero1)
+        clicar(numero1)
+        desclicar(numero1)
         valor = "1"
         lista.push(valor);
         break;
         
         
       case "2":
-        let numero2 = document.getElementById("numero2");
-        // clicar(numero2);
+        clicar(numero2);
+        desclicar(numero2)
         valor = "2"
         lista.push(valor);
         break
@@ -453,7 +457,7 @@ function verificaPonto(lista) {
 }
 
 function nada() {
-  // registroCalculo=false
+  registroCalculo=false
 } 
 
 
