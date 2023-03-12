@@ -3,14 +3,14 @@ package Calculadora;
 public class Calcular {
 	
 	
-	double numero1;
+	private double numero1;
 	double numero2;
 	double resultado;
 	String operador;
 	String mensagem;
 	
-	void alteraNumero1(double valor1){
-		numero1 = valor1;
+	void alteraNumero1(double numero1){
+		this.numero1 = numero1;
 	}
 	
 	

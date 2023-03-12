@@ -12,4 +12,4 @@ def exibeNumeros(numero):
         print(calculaFibonacci(i))
 
 
-exibeNumeros(9)
+exibeNumeros(10)
