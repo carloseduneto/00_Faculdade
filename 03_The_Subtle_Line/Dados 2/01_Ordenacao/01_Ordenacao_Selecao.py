@@ -1,10 +1,10 @@
-def ordenacaoSelecao (lista):
-    contador=0
+def ordenacaoSelecao(lista):
+    contador = 0
 
     for i in range(len(lista)):
-        indiceMenor=i
-        lista[i]= lista[indiceMenor]
-        for j in range (i, len(lista)):
+        indiceMenor = i
+        lista[i] = lista[indiceMenor]
+        for j in range(i, len(lista)):
             if lista[j] < lista[indiceMenor]:
                 # a=lista[indiceMenor]
                 # b = lista[j]
@@ -16,8 +16,8 @@ def ordenacaoSelecao (lista):
 
                 temporario = lista[indiceMenor]
                 lista[indiceMenor] = lista[j]
-                lista[j]=temporario
-                contador= contador+1
+                lista[j] = temporario
+                contador = contador+1
 
             """
                 a = lista[indiceMenor]
@@ -27,5 +27,8 @@ def ordenacaoSelecao (lista):
                 a = temporario
             """
 
+
 # print(lista)
+lista = [2, 3, 6, 5, 11, 8, 9]
+print(ordenacaoSelecao(lista))
 # print(f"Contei {contador} vezes")
