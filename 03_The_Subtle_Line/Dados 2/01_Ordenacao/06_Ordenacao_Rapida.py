@@ -35,3 +35,18 @@ def quicksort(lista):
 lista = ["a", "jk",   "lk"]
 
 print(quicksort(lista))
+
+
+def quick_sort(lista):
+    if len(lista) <= 1:
+        return lista
+    else:
+        pivo = lista[0]
+        esquerda = []
+        direita = []
+        for item in lista[1:]:
+            if item < pivo:
+                esquerda.append(item)
+            else:
+                direita.append(item)
+        return quick_sort(esquerda) + [pivo] + quick_sort(direita)

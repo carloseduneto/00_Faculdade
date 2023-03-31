@@ -16,5 +16,35 @@ def ordenacaoInsercao(lista):
     return lista
 
 
+def merge_sort(lista):
+    if len(lista) <= 1:
+        return lista
+
+    meio = len(lista) // 2
+    esquerda = lista[:meio]
+    direita = lista[meio:]
+
+    esquerda = merge_sort(esquerda)
+    direita = merge_sort(direita)
+
+    return merge(esquerda, direita)
+
+
+def merge(esquerda, direita):
+    lista = []
+
+    while len(esquerda) > 0 and len(direita) > 0:
+        if esquerda[0] < direita[0]:
+            lista.append(esquerda[0])
+            esquerda = esquerda[1:]
+        else:
+            lista.append(direita[0])
+            direita = direita[1:]
+
+    lista += esquerda
+    lista += direita
+
+    return lista
+
 lista = [5, 2, 8, 4, 6, 1]
 print(ordenacaoInsercao(list))
