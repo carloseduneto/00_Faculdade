@@ -1,0 +1,199 @@
+@charset "ISO-8859-1";
+*{
+           font-family: 'Montserrat';
+          } 
+
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        	background-position: center;
+        	background-size: cover;
+        }
+
+.formulario-bg{
+	background: url(https://images.unsplash.com/photo-1567958451986-2de427a4a0be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+input:required:focus {
+  background-color: yellow;
+  color: red;
+}
+
+.index-bg{
+    background: url(https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+	background-position: center;
+    background-size: cover;
+}
+
+.excluir-bg{
+    background: url(https://fcem.com.br/wp-content/uploads/2023/02/roupas-descarte.jpg);
+	background-position: center;
+    background-size: cover;
+    background-position-y:-250px; 
+}
+
+
+        .container {
+            text-align: center;
+            background-color: #f0f0f0;
+            height: 50vh;
+        }
+        
+        .container-excluir{
+        	width: 447px;
+            background-color: #e5e5e5;
+        }
+        
+
+        .header {
+            background-color: #ff6b6b;
+            color: #ffffff;
+            padding-top: 20px;
+            margin: 5px;
+             
+        }
+        
+        .subtitulo{
+        	background-color: #ffb36b;
+        	padding: 20px;
+        	margin-top: 25px;
+        	color: brown;
+        	font-weight: bold;
+        }
+        
+        .subtitulo-f{
+        	background-color: #ffb36b;
+        	padding: 20px;
+        	margin-top: 25px;
+        	color: brown;
+        	font-weight: bold;
+        	
+        	padding-right: 120px;
+        	padding-left:120px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .nav .nav-excluir{
+            margin-top: 20px;
+        }
+
+        .nav a, .cadastrar {
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ffcc29;
+            color: #333333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.0);
+            
+        }
+
+        .nav a:hover, .cadastrar:hover {
+            background-color: #ff9900;
+        }
+        
+
+
+        .nav-excluir .sim, .nao{
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.0);
+            font-weight: bold;
+            
+        }
+
+		.sim{
+            background-color: #ed1f24;
+            transition: background-color 0.3s;
+		
+		}
+
+        .sim:hover{
+            background-color: #c51014;
+        }
+        
+		.nao{
+            background-color: #00aa21;
+            transition: background-color 0.3s;
+		
+		}
+
+        .nao:hover{
+            background-color: #007617;
+        }
+        input[type=text]{
+        margin-top: 10px;
+        font-size: 18px;
+        height: 22px;
+        width: 150px;
+        padding: 3px;
+        
+        }
+        
+        input[type=text]:focus {
+    color: black;
+    background-color: #ffcb9b;
+}
+
+
+        
+/* Define a animação 'moveRight' */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0); /* Começa na posição inicial (0px) */
+  }
+  50% {
+    transform: translateX(10px); /* Termina 10px à direita */
+  }100%{
+  transform: translateX(0px);
+  }
+}
+
+/* Aplica a animação ao elemento com a classe .voltar */
+.voltar {
+  text-decoration: none;
+  display: inline-block; /* Certifique-se de que o elemento tenha um layout em bloco ou em linha */
+  transition: transform 1s; /* Adiciona uma transição suave para a transformação */
+  /* Inicia a animação em loop */
+}
+
+.voltar:hover {
+  animation: none; /* Remove a animação ao passar o mouse */
+  transform: translateX(10px);
+  animation: moveRight 1s forwards infinite;  /* Mantém o elemento na posição final após a animação */
+}
+
+
+.material-symbols-outlined {
+        vertical-align: baseline;
+        position: relative;
+        top: 5px; /* Ajuste isso conforme necessário */
+        
+    }
+
+    .icones{
+    color: #787878;
+        left:-10px;
+    }
+    
+    	.seta{
+    	left: -150px;
+    	cursor: pointer;
+    	color: black;
+    	}

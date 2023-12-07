@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+</head>
+
+<body>
+    <table id="resultado" border="1">
+        <th>Nome</th>
+        <th>Data</th>
+    </table>
+
+    <script>
+        fetch("https://www.gov.uk/bank-holidays.json")
+            .then(resp => resp.json())
+            .then(dados => mostrar(dados));
+
+        function mostrar(dados) {
+            var r = document.getElementById("resultado");
+            console.log(dados['england-and-wales']['events'][0]);
+            
+            for (var i in dados['england-and-wales']['events']) {
+                var feridado = dados['england-and-wales']['events'][i];
+
+                r.innerHTML += "<tr>"
+                    + "<td>" + feridado.title + "</td>"
+                    + "<td>" + feridado.date + "</td>"
+                    + "</tr>";
+            }
+        }
+    </script>
+</body>
+
+</html>

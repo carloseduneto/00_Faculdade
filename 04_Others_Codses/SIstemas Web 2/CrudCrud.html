@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+</head>
+
+<body>
+
+    <div>
+        Nome: <input type="text"  id="nome">
+        <br>
+        Idade: <input type="text"  id="idade">
+        <br>
+        Telefone: <input type="text"  id="telefone">
+        <br>
+        <input type="button" value="Salvar" onclick="salvar()">
+
+
+    </div>
+    <br>
+    <table id="resultado" border="1">
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Telefone</th>
+    </table>
+
+
+    <script>
+        
+function salvar(){
+    var p = {};
+    p.nome = documnet.getElementById("nome").value
+    p.idade = documnet.getElementById("idade").value
+    p.telefone = documnet.getElementById("telefone").value
+
+    // COnverte em uma string Json
+    var json = JSON.stringify(p);
+
+    // Executa o método post
+    fetch("https://crudcrud.com/api/a34ead6ac4b64c78b0badafb50a9f7bc",
+        {method: "POST", body :json})
+        .then(dados => mostrar(dados))
+        .then(listar());
+
+
+}
+
+function listar() {
+    fetch("https://crudcrud.com/api/a34ead6ac4b64c78b0badafb50a9f7bc")
+        .then(resp => resp.json())
+        .then(dados => mostrar(dados));
+}
+
+
+        function mostrar(dados) {
+            var r = document.getElementById("resultado");
+            console.log([0]);
+
+            for (var i in dados) {
+                var pessoa = dados[i];
+
+                r.innerHTML += "<tr>"
+                    + "<td>" + pessoa.nome + "</td>"
+                    + "<td>" + pessoa.idade + "</td>"
+                    + "<td>" + pessoa.telefone + "</td>"
+                    + "</tr>";
+            }
+        }
+
+        listar()
+    </script>
+</body>
+
+</html>

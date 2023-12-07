@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+</head>
+<body>
+    <table id="resultado" border="1"></table>
+
+    <script>
+        fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1080")
+        .then(resp => resp.json())
+        .then(dados => mostrar(dados));
+
+        function mostrar(dados){
+            var r = document.getElementById("resultado");
+            console.log(dados);
+                for (var i in dados.results){
+                    var p = dados.results[i];
+                    r.innerHTML+= "<tr>"
+                        +"<td>"+ p.name + "</td>"
+                        +"<td>"+ p.url+ "</td>"
+                        +"</tr>";
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animais</title>
+</head>
+<body>
+
+<table border="1" width="100%" id="tabela">
+
+
+
+</table>
+
+
+
+	<script>
+
+	fetch("AnimalServelt2")	
+		.then(response => response.json())
+		.then(data => mostrarDados(data));
+	
+	
+	function mostrarDados(data) {		
+	var dados = "<th>Id</th>"
+				+"<th>Nome</th>"
+				+"<th>Espécie</th>"
+				+"<th>Raça</th>";
+	
+	//Percorre vetor com os dados retornados na API
+	for (var i in data){
+		var a = data[i];
+		dados+= "<tr>"+"<td>"+ a.idanimal + "</td>"
+		+"<td>"+ a.nome + "</td>"
+		+"<td>"+ a.especie + "</td>"
+		+"<td>"+ a.raca + "</td>"+"+</tr>"
+	
+	}
+	var tabela = document.getElementById("tabela");
+	tabela.innerHTML= "<tr><td>Hello World, programed to work e not to fell</td></tr>";
+	tabela.innerHTML= dados;
+	}
+	</script>
+
+</body>
+</html>
